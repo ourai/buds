@@ -1,0 +1,26 @@
+{
+  "name": "bud",
+  "homepage": "https://github.com/ourai/bud",
+  "authors": [
+    "Ourai Lin <ourairyu@gmail.com>"
+  ],
+  "description": "Basis of all styles",
+  "main": "",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "helper"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "*.log",
+    "*.md",
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
+  ]
+}
