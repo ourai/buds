@@ -5,7 +5,9 @@
     "Ourai Lin <ourairyu@gmail.com>"
   ],
   "description": "Basis of all styles",
-  "main": "",
+  "main": [
+    "dist/bud.css"
+  ],
   "keywords": [
     "css",
     "sass",
