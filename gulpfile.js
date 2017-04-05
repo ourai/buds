@@ -1,21 +1,26 @@
 "use strict";
 
 const gulp = require("gulp");
-const concat = require("gulp-concat");
 const sass = require("gulp-sass");
+const scssimport = require("gulp-shopify-sass");
 const rename = require("gulp-rename");
 
 const pkg = require("./package.json");
 
-gulp.task("compile-css", function() {
+gulp.task("import-scss", function() {
   return gulp
     .src("./src/_exports.scss")
-    .pipe(concat("index.scss"))
-    .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
-    .pipe(rename(`${pkg.name}.css`))
+    .pipe(scssimport())
+    .pipe(rename(`_${pkg.name}.scss`))
     .pipe(gulp.dest("./dist"));
 });
 
-gulp.task("compile", ["compile-css"]);
+gulp.task("compile", ["import-scss"], function() {
+  return gulp
+    .src(`./dist/_${pkg.name}.scss`)
+    .pipe(rename(`${pkg.name}.scss`))
+    .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
+    .pipe(gulp.dest("./dist"));
+});
 
 gulp.task("default", ["compile"]);

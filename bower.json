@@ -6,6 +6,7 @@
   ],
   "description": "Basis of all styles",
   "main": [
+    "dist/_bud.scss",
     "dist/bud.css"
   ],
   "keywords": [
