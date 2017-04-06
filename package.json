@@ -1,6 +1,6 @@
 {
   "name": "buds",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Basis of all styles",
   "main": "index.js",
   "scripts": {
