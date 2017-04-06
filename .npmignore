@@ -11,6 +11,4 @@ bower_components
 *.log
 *.md
 
-/src
-
 gulpfile.js

@@ -6,8 +6,8 @@
   ],
   "description": "Basis of all styles",
   "main": [
-    "dist/_buds.scss",
-    "dist/buds.css"
+    "scss/_buds.scss",
+    "css/buds.css"
   ],
   "keywords": [
     "css",
@@ -21,10 +21,10 @@
     "*.json",
     "*.log",
     "*.md",
+    "gulpfile.js",
     "bower_components",
     "node_modules",
     "test",
-    "tests",
-    "src"
+    "tests"
   ]
 }

@@ -4,8 +4,9 @@
   "description": "Basis of all styles",
   "main": "dist/buds.css",
   "scripts": {
-    "precompile": "rm -rf dist",
-    "compile": "gulp compile"
+    "precompile": "rm -rf css",
+    "compile": "gulp compile",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,6 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
   }
 }
