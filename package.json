@@ -2,7 +2,10 @@
   "name": "buds",
   "version": "0.1.0",
   "description": "Basis of all styles",
-  "main": "index.js",
+  "main": [
+    "dist/_buds.scss",
+    "dist/buds.css"
+  ],
   "scripts": {
     "precompile": "rm -rf dist",
     "compile": "gulp compile"
@@ -19,8 +22,8 @@
   "homepage": "https://github.com/ourai/buds",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-shopify-sass": "^0.4.1"
+    "gulp-sass": "^3.1.0"
   }
 }
