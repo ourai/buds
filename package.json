@@ -1,6 +1,6 @@
 {
   "name": "buds",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Basis of all styles",
   "main": "dist/buds.css",
   "scripts": {
