@@ -1,5 +1,5 @@
 {
-  "name": "bud",
+  "name": "buds",
   "version": "0.0.0",
   "description": "Basis of all styles",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ourai/bud.git"
+    "url": "git+https://github.com/ourai/buds.git"
   },
   "author": "Ourai Lin <ourairyu@gmail.com> (http://ourai.ws/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ourai/bud/issues"
+    "url": "https://github.com/ourai/buds/issues"
   },
-  "homepage": "https://github.com/ourai/bud",
+  "homepage": "https://github.com/ourai/buds",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",

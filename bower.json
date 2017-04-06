@@ -1,13 +1,13 @@
 {
-  "name": "bud",
-  "homepage": "https://github.com/ourai/bud",
+  "name": "buds",
+  "homepage": "https://github.com/ourai/buds",
   "authors": [
     "Ourai Lin <ourairyu@gmail.com>"
   ],
   "description": "Basis of all styles",
   "main": [
-    "dist/_bud.scss",
-    "dist/bud.css"
+    "dist/_buds.scss",
+    "dist/buds.css"
   ],
   "keywords": [
     "css",

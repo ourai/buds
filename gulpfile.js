@@ -5,7 +5,7 @@ const sass = require("gulp-sass");
 const scssimport = require("gulp-shopify-sass");
 const rename = require("gulp-rename");
 
-const pkg = require("./package.json");
+const pkg = require("./bower.json");
 
 gulp.task("import-scss", function() {
   return gulp
