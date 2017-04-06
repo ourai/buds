@@ -2,10 +2,7 @@
   "name": "buds",
   "version": "0.1.1",
   "description": "Basis of all styles",
-  "main": [
-    "dist/_buds.scss",
-    "dist/buds.css"
-  ],
+  "main": "dist/buds.css",
   "scripts": {
     "precompile": "rm -rf dist",
     "compile": "gulp compile"
