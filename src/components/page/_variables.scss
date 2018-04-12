@@ -1,0 +1,49 @@
+$layout-prefix: "Page" !default;
+
+$layout-wrapper-selector: ".#{$layout-prefix}" !default;
+
+$layout-main-selector: ".#{$layout-prefix}-main" !default;
+
+$layout-sidebar-selector: ".#{$layout-prefix}-sidebar" !default;
+$layout-sidebar-width: 220px !default;
+$layout-sidebar-top-padding: 20px !default;
+$layout-sidebar-bottom-padding: 50px !default;
+$layout-sidebar-bg-color: transparent !default;
+$layout-sidebar-text-color: inherit !default;
+$layout-sidebar-text-hover: $layout-sidebar-text-color !default;
+$layout-sidebar-item-height: 48px !default;
+$layout-sidebar-item-padding: 25px !default;
+$layout-sidebar-item-hover: transparent !default;
+$layout-sidebar-item-active: $layout-sidebar-item-hover !default;
+$layout-sidebar-sub-bg-color: transparent !default;
+$layout-sidebar-box-shadow: none !default;
+
+$layout-header-selector: ".#{$layout-prefix}-header" !default;
+$layout-header-height: 60px !default;
+$layout-header-border-width: 0 !default;
+$layout-header-border-color: transparent !default;
+$layout-header-bg-color: transparent !default;
+$layout-header-box-shadow: none !default;
+
+$layout-body-selector: ".#{$layout-prefix}-body" !default;
+$layout-body-bg-color: #fff !default;
+
+$layout-content-selector: ".#{$layout-prefix}-content" !default;
+$layout-content-top-padding: 30px !default;
+$layout-content-bottom-padding: 30px !default;
+$layout-content-heading-font-size: 24px !default;
+
+$layout-footer-selector: ".#{$layout-prefix}-footer" !default;
+$layout-footer-height: 0 !default;
+
+$layout-brand-image-height: 24px !default;
+$layout-brand-font-size: 22px !default;
+$layout-brand-font-weight: inherit !default;
+$layout-brand-text-color: inherit !default;
+$layout-brand-bg-color: transparent !default;
+$layout-brand-separator-color: $layout-brand-text-color !default;
+$layout-brand-separator-gap: 21px !default;
+
+$layout-navbar-avatar-size: 30px !default;
+
+$layout-action-trigger-color: $layout-brand-text-color !default;

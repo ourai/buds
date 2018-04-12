@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+html,
+body,
+#{$layout-wrapper-selector} {
+  height: 100%;
+}
+
+html,
+body,
+#{$layout-wrapper-selector},
+#{$layout-main-selector},
+#{$layout-sidebar-selector},
+#{$layout-header-selector} {
+  @include box-sizing(border-box);
+}
+
+#{$layout-wrapper-selector} {
+  background-color: $layout-body-bg-color;
+}
+
+#{$layout-sidebar-selector},
+#{$layout-header-selector} {
+  font: {
+    size: $font-size-base;
+    family: $font-family-sans-serif;
+    weight: $font-weight-base;
+  }
+  line-height: $line-height-base;
+
+  ul,
+  ol {
+    list-style: none inside none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -26,5 +26,8 @@
     "node_modules",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "trick-1.0.1": "packagent/trick#1.0.1"
+  }
 }
