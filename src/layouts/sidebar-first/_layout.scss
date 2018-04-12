@@ -1,0 +1,14 @@
+#{$layout-main-selector},
+#{$layout-sidebar-selector} {
+  min-height: 100%;
+}
+
+#{$layout-main-selector} {
+  margin-left: $layout-sidebar-width;
+  @include base-layout;
+}
+
+#{$layout-sidebar-selector} {
+  position: relative;
+  z-index: 100;
+}

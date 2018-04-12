@@ -1,0 +1,20 @@
+#{$layout-wrapper-selector} {
+  overflow: hidden;
+  @include base-layout;
+
+  html.is-legacy &,
+  &.is-legacy {
+    padding-top: $layout-header-height + $layout-header-border-width + 24px !important;
+  }
+}
+
+#{$layout-body-selector},
+#{$layout-sidebar-selector},
+#{$layout-content-selector} {
+  height: 100%;
+}
+
+#{$layout-sidebar-selector},
+#{$layout-content-selector} {
+  overflow: auto;
+}

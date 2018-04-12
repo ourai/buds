@@ -1,0 +1,13 @@
+@media screen and (max-width: $screen-sm-min) {
+  .Header-toggle {
+    display: block;
+  }
+
+  .Header-brand {
+    @include header-brand-logo-in-mobile;
+  }
+  
+  .Sidebar {
+    @include sidebar-in-mobile("> .Sidebar-navs");
+  }
+}
