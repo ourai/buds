@@ -6,6 +6,8 @@
   "scripts": {
     "precompile": "rm -rf css",
     "compile": "gulp compile",
+    "pretest": "gulp test",
+    "test": "http-server ./test -p 3000 --cors *",
     "prepublish": "npm run compile"
   },
   "repository": {
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/ourai/buds",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "http-server": "^0.11.1"
   }

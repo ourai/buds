@@ -1,10 +1,8 @@
-"use strict";
-
 const gulp = require("gulp");
 const sass = require("gulp-sass");
-const concat = require("gulp-concat");
+// const concat = require("gulp-concat");
 
-const pkg = require("./bower.json");
+const pkg = require("./package.json");
 
 gulp.task("concat-scss", function() {
   return gulp.src([
@@ -21,5 +19,14 @@ gulp.task("compile", ["concat-scss"], function() {
     .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
     .pipe(gulp.dest("./css"));
 });
+
+gulp.task("compile-themes", () => {
+  return gulp
+    .src("test/themes/*/index.scss")
+    .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
+    .pipe(gulp.dest("test/themes"));
+});
+
+gulp.task("test", ["compile-themes"]);
 
 gulp.task("default", ["compile"]);
