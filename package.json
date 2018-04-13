@@ -1,7 +1,7 @@
 {
   "name": "buds",
   "version": "0.1.2",
-  "description": "Basis of all styles",
+  "description": "CSS framework following SUIT CSS naming conventions",
   "main": "dist/buds.css",
   "scripts": {
     "precompile": "rm -rf css",

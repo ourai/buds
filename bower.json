@@ -4,7 +4,7 @@
   "authors": [
     "Ourai Lin <ourairyu@gmail.com>"
   ],
-  "description": "Basis of all styles",
+  "description": "CSS framework following SUIT CSS naming conventions",
   "main": [
     "scss/_buds.scss",
     "css/buds.css"
@@ -28,7 +28,7 @@
     "tests"
   ],
   "devDependencies": {
-    "trick-1.0.1": "packagent/trick#1.0.1",
-    "suitcss-sass-0.1.0": "suitcss-sass#0.1.0"
+    "suitcss-sass-0.1.0": "suitcss-sass#0.1.0",
+    "trick-1.0.1": "packagent/trick#1.0.1"
   }
 }
