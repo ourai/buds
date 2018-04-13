@@ -4,6 +4,4 @@ Buds is a CSS framework following [SUIT CSS naming conventions](https://github.c
 
 ## Usage
 
-```sh
-bower install --save packagent/buds
-```
+Type `bower install --save packagent/buds` or `npm i --save buds` to download files.
