@@ -1,23 +1,39 @@
 const gulp = require("gulp");
+const concat = require("gulp-concat");
+const rename = require("gulp-rename");
 const sass = require("gulp-sass");
-// const concat = require("gulp-concat");
+const cssmin = require("gulp-cssmin");
+const stripCssComments = require("gulp-strip-css-comments");
+const sourcemaps = require("gulp-sourcemaps");
+
+const CSS_DIST = "dist/css";
 
 const pkg = require("./package.json");
+const tasks = [];
 
-gulp.task("concat-scss", function() {
-  return gulp.src([
-      "./scss/_variables.scss",
-      "./scss/_base.scss"
-    ])
-    .pipe(concat(`_${pkg.name}.scss`))
-    .pipe(gulp.dest("./scss"));
+["base", "components", "utils", "all"].forEach(name => {
+  const taskName = `compile-scss-${name}`;
+
+  tasks.push(taskName);
+
+  gulp.task(taskName, () => {
+    return gulp
+      .src(`src/_${name}.scss`)
+      .pipe(concat(`${name}.scss`))
+      .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
+      .pipe(stripCssComments({preserve: false}))
+      .pipe(gulp.dest(CSS_DIST));
+  });
 });
 
-gulp.task("compile", ["concat-scss"], function() {
-  return gulp.src(`./scss/_${pkg.name}.scss`)
-    .pipe(concat(`${pkg.name}.scss`))
-    .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
+gulp.task("compile", tasks, () => {
+  return gulp
+    .src(`${CSS_DIST}/**/*.css`, {base: CSS_DIST})
+    .pipe(sourcemaps.init({largeFile: true, loadMaps: true}))
+    .pipe(cssmin())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(sourcemaps.write(""))
+    .pipe(gulp.dest(CSS_DIST));
 });
 
 gulp.task("compile-themes", () => {

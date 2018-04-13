@@ -4,7 +4,7 @@
   "description": "CSS framework following SUIT CSS naming conventions",
   "main": "dist/buds.css",
   "scripts": {
-    "precompile": "rm -rf css",
+    "precompile": "rm -rf dist/css",
     "compile": "gulp compile",
     "pretest": "gulp test",
     "test": "http-server ./test -p 3000 --cors *",
@@ -22,8 +22,12 @@
   "homepage": "https://github.com/ourai/buds",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-css-comments": "^2.0.0",
     "http-server": "^0.11.1",
     "suitcss-base": "^4.0.0"
   }
