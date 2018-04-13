@@ -1,33 +1,33 @@
 @mixin base-layout {
   @include fixed-body-height(
-    $layout-header-selector, $layout-header-height + $layout-header-border-width,
-    $layout-footer-selector, $layout-footer-height,
-    $layout-body-selector
+    $page-header-selector, $page-header-height + $page-header-border-width,
+    $page-footer-selector, $page-footer-height,
+    $page-body-selector
   );
 }
 
 @mixin header-brand-logo {
   position: relative;
   font: {
-    size: $layout-brand-font-size;
-    weight: $layout-brand-font-weight;
+    size: $page-brand-font-size;
+    weight: $page-brand-font-weight;
   }
   line-height: 1.1;
   @include text-middle("img, span");
 
   img {
-    width: 256px / 50px * $layout-brand-image-height;
-    height: $layout-brand-image-height;
+    width: 256px / 50px * $page-brand-image-height;
+    height: $page-brand-image-height;
     max-height: 100%;
 
     + span {
       position: relative;
-      padding-left: $layout-brand-separator-gap;
+      padding-left: $page-brand-separator-gap;
 
       &:before {
         content: $UN-space;
         width: 1px;
-        background-color: $layout-brand-separator-color;
+        background-color: $page-brand-separator-color;
         @include stretch(0, auto, 0, 10px);
       }
     }
@@ -35,7 +35,7 @@
 
   span {
     padding-left: 10px;
-    color: $layout-brand-text-color;
+    color: $page-brand-text-color;
   }
 }
 
@@ -70,7 +70,7 @@
 }
 
 @mixin sidebar-menu-iconic {
-  $menuGap: $layout-sidebar-item-padding;
+  $menuGap: $page-sidebar-item-padding;
 
   padding: 0 $menuGap;
   @include text-middle("> .fa, > .fa + span");
@@ -86,7 +86,7 @@
     + span {
       $menuTextGap: 14px;
 
-      max-width: ($layout-sidebar-width - $menuGap * 2 - $iconWidth * $iconFontSize - $menuTextGap);
+      max-width: ($page-sidebar-width - $menuGap * 2 - $iconWidth * $iconFontSize - $menuTextGap);
       margin-left: $menuTextGap;
       @include ellipsis;
     }
@@ -95,7 +95,7 @@
 
 @mixin sidebar-menu-primary {
   position: relative;
-  height: $layout-sidebar-item-height;
+  height: $page-sidebar-item-height;
   font-weight: normal;
   @include sidebar-menu-iconic;
 }
@@ -114,7 +114,7 @@
 @mixin header-brand-logo-in-mobile {
   img {
     position: absolute;
-    top: ($layout-header-height - $layout-brand-image-height) / 2;
+    top: ($page-header-height - $page-brand-image-height) / 2;
     left: 0;
     max-width: none;
     max-height: none;
@@ -141,11 +141,11 @@
 
   @if $target != "" {
     #{$target} {
-      width: $layout-sidebar-width;
+      width: $page-sidebar-width;
       height: 100%;
       padding: {
-        top: $layout-sidebar-top-padding;
-        bottom: $layout-sidebar-bottom-padding;
+        top: $page-sidebar-top-padding;
+        bottom: $page-sidebar-bottom-padding;
       }
       overflow: auto;
       background-color: #eee;

@@ -2,10 +2,10 @@
   position: relative;
   z-index: 99;
   overflow: visible !important;
-  border-bottom: $layout-header-border-width solid $layout-header-border-color;
-  background-color: $layout-header-bg-color;
+  border-bottom: $page-header-border-width solid $page-header-border-color;
+  background-color: $page-header-bg-color;
   @include pie-clearfix;
-  @include box-shadow($layout-header-box-shadow);
+  @include box-shadow($page-header-box-shadow);
 }
 
 .Header-navs,
@@ -46,14 +46,14 @@
 .Header-toggle {
   display: none;
   margin: {
-    top: ($layout-header-height - 18px) / 2;
+    top: ($page-header-height - 18px) / 2;
     right: 10px;
   }
   padding: 0;
   border-style: none;
   line-height: 1;
   font-size: 18px;
-  color: $layout-action-trigger-color;
+  color: $page-action-trigger-color;
   background-color: transparent;
 }
 
@@ -70,13 +70,13 @@
 
     li.is-active a,
     a:hover {
-      border-bottom-color: $layout-header-border-color;
+      border-bottom-color: $page-header-border-color;
     }
 
     a {
       height: 100%;
       padding: 0 20px;
-      line-height: $layout-header-height;
+      line-height: $page-header-height;
       font-size: 16px;
       border-bottom: 2px solid transparent;
     }
@@ -89,7 +89,7 @@
   .Header-navs {
     li.is-active a,
     a:hover {
-      background-color: $layout-header-border-color;
+      background-color: $page-header-border-color;
     }
 
     a {
@@ -115,7 +115,7 @@
     &.fa {
       width: 18px;
       font-size: 18px;
-      color: $layout-action-trigger-color;
+      color: $page-action-trigger-color;
     }
   }
 
@@ -153,13 +153,13 @@
       img,
       span {
         display: block;
-        width: $layout-navbar-avatar-size;
-        height: $layout-navbar-avatar-size;
+        width: $page-navbar-avatar-size;
+        height: $page-navbar-avatar-size;
         border-radius: 50%;
       }
 
       span {
-        line-height: $layout-navbar-avatar-size;
+        line-height: $page-navbar-avatar-size;
         text-align: center;
         font: {
           size: 10px;

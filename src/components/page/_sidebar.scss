@@ -1,17 +1,17 @@
 .Sidebar {
   float: left;
-  width: $layout-sidebar-width;
-  background-color: $layout-sidebar-bg-color;
-  @include box-shadow($layout-sidebar-box-shadow);
+  width: $page-sidebar-width;
+  background-color: $page-sidebar-bg-color;
+  @include box-shadow($page-sidebar-box-shadow);
 
   .Navs > ul > li > a {
     display: block;
-    color: $layout-sidebar-text-color;
+    color: $page-sidebar-text-color;
     @include transition(background-color .3s);
   
     &:hover {
-      color: $layout-sidebar-text-hover;
-      background-color: $layout-sidebar-item-hover;
+      color: $page-sidebar-text-hover;
+      background-color: $page-sidebar-item-hover;
     }
   }
 }
@@ -27,7 +27,7 @@
 
       > .Navs {
         display: none;
-        background-color: $layout-sidebar-sub-bg-color;
+        background-color: $page-sidebar-sub-bg-color;
 
         a {
           font-weight: $font-weight-base;
@@ -38,7 +38,7 @@
       &.is-active {
         &.is-childless > a,
         > .Navs .is-active a {
-          background-color: $layout-sidebar-item-active;
+          background-color: $page-sidebar-item-active;
         }
 
         > .Navs {

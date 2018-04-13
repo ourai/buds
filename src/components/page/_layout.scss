@@ -4,25 +4,25 @@ body {
 
 html,
 body,
-#{$layout-wrapper-selector} {
+#{$page-wrapper-selector} {
   height: 100%;
 }
 
 html,
 body,
-#{$layout-wrapper-selector},
-#{$layout-main-selector},
-#{$layout-sidebar-selector},
-#{$layout-header-selector} {
+#{$page-wrapper-selector},
+#{$page-main-selector},
+#{$page-sidebar-selector},
+#{$page-header-selector} {
   @include box-sizing(border-box);
 }
 
-#{$layout-wrapper-selector} {
-  background-color: $layout-body-bg-color;
+#{$page-wrapper-selector} {
+  background-color: $page-body-bg-color;
 }
 
-#{$layout-sidebar-selector},
-#{$layout-header-selector} {
+#{$page-sidebar-selector},
+#{$page-header-selector} {
   font: {
     size: $font-size-base;
     family: $font-family-sans-serif;

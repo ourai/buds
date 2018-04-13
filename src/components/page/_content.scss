@@ -1,7 +1,7 @@
 .Content {
   padding: {
-    top: $layout-content-top-padding;
-    bottom: $layout-content-bottom-padding;
+    top: $page-content-top-padding;
+    bottom: $page-content-bottom-padding;
   }
 }
 
@@ -11,7 +11,7 @@
 
   h1 {
     margin: 0;
-    font-size: $layout-content-heading-font-size;
+    font-size: $page-content-heading-font-size;
     text-shadow: 1px 1px rgba(255, 255, 255, .5);
   }
 

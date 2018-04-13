@@ -1,14 +1,14 @@
-#{$layout-main-selector},
-#{$layout-sidebar-selector} {
+#{$page-main-selector},
+#{$page-sidebar-selector} {
   min-height: 100%;
 }
 
-#{$layout-main-selector} {
-  margin-left: $layout-sidebar-width;
+#{$page-main-selector} {
+  margin-left: $page-sidebar-width;
   @include base-layout;
 }
 
-#{$layout-sidebar-selector} {
+#{$page-sidebar-selector} {
   position: relative;
   z-index: 100;
 }

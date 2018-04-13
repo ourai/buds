@@ -1,15 +1,15 @@
 .Sidebar-brand {
-  height: $layout-header-height;
-  padding-left: $layout-sidebar-item-padding;
-  background-color: $layout-brand-bg-color;
+  height: $page-header-height;
+  padding-left: $page-sidebar-item-padding;
+  background-color: $page-brand-bg-color;
 
   a {
     display: block;
     font: {
-      size: $layout-brand-font-size;
-      weight: $layout-brand-font-weight;
+      size: $page-brand-font-size;
+      weight: $page-brand-font-weight;
     }
-    line-height: $layout-header-height;
-    color: $layout-brand-text-color;
+    line-height: $page-header-height;
+    color: $page-brand-text-color;
   }
 }

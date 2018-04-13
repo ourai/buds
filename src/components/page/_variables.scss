@@ -1,49 +1,49 @@
-$layout-prefix: "Page" !default;
+$page-prefix: "Page" !default;
 
-$layout-wrapper-selector: ".#{$layout-prefix}" !default;
+$page-wrapper-selector: ".#{$page-prefix}" !default;
 
-$layout-main-selector: ".#{$layout-prefix}-main" !default;
+$page-main-selector: ".#{$page-prefix}-main" !default;
 
-$layout-sidebar-selector: ".#{$layout-prefix}-sidebar" !default;
-$layout-sidebar-width: 220px !default;
-$layout-sidebar-top-padding: 20px !default;
-$layout-sidebar-bottom-padding: 50px !default;
-$layout-sidebar-bg-color: transparent !default;
-$layout-sidebar-text-color: inherit !default;
-$layout-sidebar-text-hover: $layout-sidebar-text-color !default;
-$layout-sidebar-item-height: 48px !default;
-$layout-sidebar-item-padding: 25px !default;
-$layout-sidebar-item-hover: transparent !default;
-$layout-sidebar-item-active: $layout-sidebar-item-hover !default;
-$layout-sidebar-sub-bg-color: transparent !default;
-$layout-sidebar-box-shadow: none !default;
+$page-sidebar-selector: ".#{$page-prefix}-sidebar" !default;
+$page-sidebar-width: 220px !default;
+$page-sidebar-top-padding: 20px !default;
+$page-sidebar-bottom-padding: 50px !default;
+$page-sidebar-bg-color: transparent !default;
+$page-sidebar-text-color: inherit !default;
+$page-sidebar-text-hover: $page-sidebar-text-color !default;
+$page-sidebar-item-height: 48px !default;
+$page-sidebar-item-padding: 25px !default;
+$page-sidebar-item-hover: transparent !default;
+$page-sidebar-item-active: $page-sidebar-item-hover !default;
+$page-sidebar-sub-bg-color: transparent !default;
+$page-sidebar-box-shadow: none !default;
 
-$layout-header-selector: ".#{$layout-prefix}-header" !default;
-$layout-header-height: 60px !default;
-$layout-header-border-width: 0 !default;
-$layout-header-border-color: transparent !default;
-$layout-header-bg-color: transparent !default;
-$layout-header-box-shadow: none !default;
+$page-header-selector: ".#{$page-prefix}-header" !default;
+$page-header-height: 60px !default;
+$page-header-border-width: 0 !default;
+$page-header-border-color: transparent !default;
+$page-header-bg-color: transparent !default;
+$page-header-box-shadow: none !default;
 
-$layout-body-selector: ".#{$layout-prefix}-body" !default;
-$layout-body-bg-color: #fff !default;
+$page-body-selector: ".#{$page-prefix}-body" !default;
+$page-body-bg-color: #fff !default;
 
-$layout-content-selector: ".#{$layout-prefix}-content" !default;
-$layout-content-top-padding: 30px !default;
-$layout-content-bottom-padding: 30px !default;
-$layout-content-heading-font-size: 24px !default;
+$page-content-selector: ".#{$page-prefix}-content" !default;
+$page-content-top-padding: 30px !default;
+$page-content-bottom-padding: 30px !default;
+$page-content-heading-font-size: 24px !default;
 
-$layout-footer-selector: ".#{$layout-prefix}-footer" !default;
-$layout-footer-height: 0 !default;
+$page-footer-selector: ".#{$page-prefix}-footer" !default;
+$page-footer-height: 0 !default;
 
-$layout-brand-image-height: 24px !default;
-$layout-brand-font-size: 22px !default;
-$layout-brand-font-weight: inherit !default;
-$layout-brand-text-color: inherit !default;
-$layout-brand-bg-color: transparent !default;
-$layout-brand-separator-color: $layout-brand-text-color !default;
-$layout-brand-separator-gap: 21px !default;
+$page-brand-image-height: 24px !default;
+$page-brand-font-size: 22px !default;
+$page-brand-font-weight: inherit !default;
+$page-brand-text-color: inherit !default;
+$page-brand-bg-color: transparent !default;
+$page-brand-separator-color: $page-brand-text-color !default;
+$page-brand-separator-gap: 21px !default;
 
-$layout-navbar-avatar-size: 30px !default;
+$page-navbar-avatar-size: 30px !default;
 
-$layout-action-trigger-color: $layout-brand-text-color !default;
+$page-action-trigger-color: $page-brand-text-color !default;
