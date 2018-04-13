@@ -12,5 +12,5 @@ const rootPath = path.resolve(__dirname, "../..");
 const releasePath = path.resolve(rootPath, DIST_DIR);
 
 execSync("rm -rf css/ && rm -rf scss/ && rm -rf bower.json && rm -rf *.md", {cwd: releasePath});
-execSync(`cp -R dist/ ${DIST_DIR} && cp bower.json ${DIST_DIR} && cp *.md ${DIST_DIR}`, {cwd: rootPath});
+execSync(`cp -R dist/css ${DIST_DIR}/css && cp -R dist/scss ${DIST_DIR}/scss && cp bower.json ${DIST_DIR} && cp *.md ${DIST_DIR}`, {cwd: rootPath});
 execSync(`git add . && git commit -m "Built on ${new Date()}" && git tag -a v${pkg.version} -m "${pkg.version}" && git push --tags && git push --all`, {cwd: releasePath});

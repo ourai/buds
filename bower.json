@@ -6,8 +6,8 @@
   ],
   "description": "CSS framework following SUIT CSS naming conventions",
   "main": [
-    "scss/_buds.scss",
-    "css/buds.css"
+    "scss/_all.scss",
+    "css/all.min.css"
   ],
   "keywords": [
     "css",
