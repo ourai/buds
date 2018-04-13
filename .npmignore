@@ -1,14 +1,19 @@
+**.log
+
+.*-tmp
+.*-cache
 .DS_Store
 .git
-.sass-cache
 .idea
+.jekyll-metadata
+.tmp
+.vscode
 .editorconfig
 
-node_modules
 bower_components
+node_modules
 
-*.json
-*.log
-*.md
+/test
 
+bower.json
 gulpfile.js

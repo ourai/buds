@@ -8,7 +8,13 @@
     "compile": "gulp compile",
     "pretest": "gulp test",
     "test": "http-server ./test -p 3000 --cors *",
-    "prepublish": "npm run compile"
+    "precopy": "rm -rf dist/scss",
+    "copy": "cp -R src dist/scss",
+    "prerelease": "npm run copy && npm run compile",
+    "release": "node ./build/scripts/release.js",
+    "bump:patch": "npm version patch && npm run release",
+    "bump:minor": "npm version minor && npm run release",
+    "bump:major": "npm version major && npm run release"
   },
   "repository": {
     "type": "git",
