@@ -1,6 +1,6 @@
 {
   "name": "buds",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "CSS framework following SUIT CSS naming conventions",
   "main": "dist/buds.css",
   "scripts": {
