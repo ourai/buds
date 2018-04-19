@@ -7,7 +7,7 @@
   "description": "CSS framework following SUIT CSS naming conventions",
   "main": [
     "scss/_all.scss",
-    "css/all.min.css"
+    "css/all.css"
   ],
   "keywords": [
     "css",

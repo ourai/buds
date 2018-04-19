@@ -1,0 +1,22 @@
+.Box {
+  background-color: $box-bg-color;
+  @include box-shadow($box-box-shadow);
+  @include border-radius($box-border-radius);
+
+  + .Box {
+    margin-top: $box-siblings-space;
+  }
+
+  .Box-body,
+  .Box-footer {
+    padding: $box-vertical-padding $box-horizontal-padding;
+  }
+
+  &.Box--fixedHeight {
+    @include fixed-body-height(
+      ".Box-header", $box-header-height,
+      ".Box-footer", $box-footer-height,
+      ".Box-body"
+    );
+  }
+}
