@@ -12,9 +12,9 @@
     "copy": "cp -R src dist/scss && cp package*.json dist",
     "prerelease": "npm run copy && npm run compile",
     "release": "node ./build/scripts/release.js && cd dist && npm publish",
-    "bump:patch": "npm version patch && npm run release",
+    "bump:major": "npm version major && npm run release",
     "bump:minor": "npm version minor && npm run release",
-    "bump:major": "npm version major && npm run release"
+    "bump:patch": "npm version patch && npm run release"
   },
   "repository": {
     "type": "git",
