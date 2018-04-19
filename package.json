@@ -1,6 +1,6 @@
 {
   "name": "buds",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "CSS framework following SUIT CSS naming conventions",
   "main": "scss/_all.scss",
   "scripts": {
