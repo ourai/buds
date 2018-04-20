@@ -1,9 +1,12 @@
 $box-bg-color: #fff !default;
 $box-border-radius: 3px !default;
 $box-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14) !default;
+
+$box-padding: 15px !default;
+$box-vertical-padding: $box-padding !default;
+$box-horizontal-padding: $box-padding !default;
+
 $box-siblings-space: 20px !default;
-$box-horizontal-padding: 15px !default;
-$box-vertical-padding: $box-horizontal-padding !default;
 
 $box-header-height: 54 !default;
 $box-footer-height: auto !default;
