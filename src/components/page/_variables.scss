@@ -6,8 +6,9 @@ $page-main-selector: ".#{$page-prefix}-main" !default;
 
 $page-sidebar-selector: ".#{$page-prefix}-sidebar" !default;
 $page-sidebar-width: 220px !default;
-$page-sidebar-top-padding: 20px !default;
-$page-sidebar-bottom-padding: 50px !default;
+$page-sidebar-vertical-padding: 0 !default;
+$page-sidebar-top-padding: $page-sidebar-vertical-padding !default;
+$page-sidebar-bottom-padding: $page-sidebar-vertical-padding !default;
 $page-sidebar-bg-color: transparent !default;
 $page-sidebar-text-color: inherit !default;
 $page-sidebar-text-hover: $page-sidebar-text-color !default;
@@ -43,6 +44,25 @@ $page-brand-text-color: inherit !default;
 $page-brand-bg-color: transparent !default;
 $page-brand-separator-color: $page-brand-text-color !default;
 $page-brand-separator-gap: 21px !default;
+$page-brand-separator-offset: 10px !default;
+
+$sidebar-brand-image-height: $page-brand-image-height !default;
+$sidebar-brand-font-size: $page-brand-font-size !default;
+$sidebar-brand-font-weight: $page-brand-font-weight !default;
+$sidebar-brand-text-color: $page-brand-text-color !default;
+$sidebar-brand-bg-color: $page-brand-bg-color !default;
+$sidebar-brand-separator-color: $page-brand-text-color !default;
+$sidebar-brand-separator-gap: $page-brand-separator-gap !default;
+$sidebar-brand-separator-offset: $page-brand-separator-offset !default;
+
+$header-brand-image-height: $page-brand-image-height !default;
+$header-brand-font-size: $page-brand-font-size !default;
+$header-brand-font-weight: $page-brand-font-weight !default;
+$header-brand-text-color: $page-brand-text-color !default;
+$header-brand-bg-color: $page-brand-bg-color !default;
+$header-brand-separator-color: $page-brand-text-color !default;
+$header-brand-separator-gap: $page-brand-separator-gap !default;
+$header-brand-separator-offset: $page-brand-separator-offset !default;
 
 $page-navbar-avatar-size: 30px !default;
 

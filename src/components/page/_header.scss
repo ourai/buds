@@ -58,11 +58,9 @@
 }
 
 .Header-brand {
-  margin-left: 5px;
-
   a {
-    display: block;
-    @include header-brand-logo;
+    position: relative;
+    @include brand-link();
   }
 
   + .Header-navs {

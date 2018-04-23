@@ -1,15 +1,10 @@
 .Sidebar-brand {
   height: $page-header-height;
   padding-left: $page-sidebar-item-padding;
-  background-color: $page-brand-bg-color;
+  background-color: $sidebar-brand-bg-color;
 
   a {
-    display: block;
-    font: {
-      size: $page-brand-font-size;
-      weight: $page-brand-font-weight;
-    }
-    line-height: $page-header-height;
-    color: $page-brand-text-color;
+    height: 100%;
+    @include brand-link(false);
   }
 }
