@@ -1,13 +1,3 @@
-body {
-  margin: 0;
-}
-
-html,
-body,
-#{$page-wrapper-selector} {
-  height: 100%;
-}
-
 html,
 body,
 #{$page-wrapper-selector},
@@ -17,8 +7,23 @@ body,
   @include box-sizing(border-box);
 }
 
+html,
+body,
+#{$page-wrapper-selector} {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
 #{$page-wrapper-selector} {
   background-color: $page-body-bg-color;
+
+  @if $optimize-legibility == true {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 #{$page-sidebar-selector},

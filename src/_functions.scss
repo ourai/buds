@@ -1,0 +1,7 @@
+@function whether-zero-pixel( $u ) {
+  @return $u == 0 or $u == 0px or $u == 0%;
+}
+
+@function whether-non-zero( $u ) {
+  @return not whether-zero-pixel($u);
+}

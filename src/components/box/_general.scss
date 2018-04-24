@@ -1,16 +1,26 @@
 .Box {
   display: block;
   background-color: $box-bg-color;
-  @include box-shadow($box-box-shadow);
-  @include border-radius($box-border-radius);
 
-  .Box-body,
-  .Box-footer {
-    padding: $box-vertical-padding $box-horizontal-padding;
+  @if $box-box-shadow != none {
+    @include box-shadow($box-box-shadow);
   }
 
-  + .Box {
-    margin-top: $box-siblings-space;
+  @if whether-non-zero($box-border-radius) {
+    @include border-radius($box-border-radius);
+  }
+
+  @if whether-non-zero($box-vertical-padding) or whether-non-zero($box-horizontal-padding) {
+    .Box-body,
+    .Box-footer {
+      padding: $box-vertical-padding $box-horizontal-padding;
+    }
+  }
+
+  @if whether-non-zero($box-siblings-space) {
+    + .Box {
+      margin-top: $box-siblings-space;
+    }
   }
 }
 

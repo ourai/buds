@@ -6,7 +6,10 @@
     size: $page-sidebar-font-size;
     weight: $page-sidebar-font-weight;
   }
-  @include box-shadow($page-sidebar-box-shadow);
+
+  @if $page-sidebar-box-shadow != none {
+    @include box-shadow($page-sidebar-box-shadow);
+  }
 
   .Navs > ul > li > a {
     display: block;
@@ -21,9 +24,12 @@
 }
 
 .Sidebar-navs {
-  padding: {
-    top: $page-sidebar-top-padding;
-    bottom: $page-sidebar-bottom-padding;
+  @if whether-non-zero($page-sidebar-top-padding) {
+    padding-top: $page-sidebar-top-padding;
+  }
+
+  @if whether-non-zero($page-sidebar-bottom-padding) {
+    padding-bottom: $page-sidebar-bottom-padding;
   }
 
   > ul {

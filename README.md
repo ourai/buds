@@ -1,6 +1,6 @@
 # Buds
 
-Buds is a CSS framework following [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md).
+A CSS framework following [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md).
 
 ## Usage
 
