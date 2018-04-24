@@ -31,13 +31,18 @@
 
     + span {
       position: relative;
-      padding-left: $separator-gap;
 
-      &:before {
-        content: $UN-space;
-        width: 1px;
-        background-color: $separator-color;
-        @include stretch(0, auto, 0, $separator-offset);
+      @if whether-non-zero($separator-gap) {
+        padding-left: $separator-gap;
+      }
+
+      @if $separator-color != transparent {
+        &:before {
+          content: $UN-space;
+          width: 1px;
+          background-color: $separator-color;
+          @include stretch(0, auto, 0, $separator-offset);
+        }
       }
     }
   }

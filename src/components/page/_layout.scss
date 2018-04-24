@@ -20,7 +20,7 @@ body {
 #{$page-wrapper-selector} {
   background-color: $page-body-bg-color;
 
-  @if $optimize-legibility == true {
+  @if $page-optimize-legibility == true {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
