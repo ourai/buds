@@ -1,5 +1,6 @@
-$page-prefix: "Page" !default;
+$page-optimize-legibility: $optimize-legibility !default;
 
+$page-prefix: "Page" !default;
 $page-wrapper-selector: ".#{$page-prefix}" !default;
 $page-main-selector: ".#{$page-prefix}-main" !default;
 $page-sidebar-selector: ".#{$page-prefix}-sidebar" !default;
