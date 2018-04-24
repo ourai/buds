@@ -10,6 +10,11 @@ body {
   }
   line-height: $line-height-base;
   color: $text-color;
+
+  @if $optimize-legibility == true {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 img {

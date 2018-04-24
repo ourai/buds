@@ -2,8 +2,16 @@
   position: relative;
   z-index: 99;
   overflow: visible !important;
+  padding: {
+    right: $page-header-right-padding;
+    left: $page-header-left-padding;
+  }
   border-bottom: $page-header-border-width solid $page-header-border-color;
   background-color: $page-header-bg-color;
+  font: {
+    size: $page-header-font-size;
+    weight: $page-header-font-weight;
+  }
   @include pie-clearfix;
   @include box-shadow($page-header-box-shadow);
 }

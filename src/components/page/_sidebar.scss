@@ -2,6 +2,10 @@
   float: left;
   width: $page-sidebar-width;
   background-color: $page-sidebar-bg-color;
+  font: {
+    size: $page-sidebar-font-size;
+    weight: $page-sidebar-font-weight;
+  }
   @include box-shadow($page-sidebar-box-shadow);
 
   .Navs > ul > li > a {
@@ -17,7 +21,10 @@
 }
 
 .Sidebar-navs {
-  font-size: 14px;
+  padding: {
+    top: $page-sidebar-top-padding;
+    bottom: $page-sidebar-bottom-padding;
+  }
 
   > ul {
     > li {
@@ -30,7 +37,6 @@
         background-color: $page-sidebar-sub-bg-color;
 
         a {
-          font-weight: $font-weight-base;
           @include sidebar-menu-secondary;
         }
       }
