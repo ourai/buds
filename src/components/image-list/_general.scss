@@ -1,0 +1,35 @@
+.ImageList {
+  &,
+  &:before,
+  &:after,
+  *,
+  *:before,
+  *:after {
+    @include box-sizing(border-box);
+  }
+}
+
+.ImageList-group {
+  $gap: half($image-list-gutter);
+
+  margin: {
+    right: -$gap;
+    left: -$gap;
+  }
+  @include pie-clearfix;
+
+  + .ImageList-group {
+    margin-top: $gap;
+  }
+}
+
+.ImageList-item {
+  $gap: half($image-list-gutter);
+
+  float: left;
+  width: percentage(1 / 3);
+  padding: {
+    right: $gap;
+    left: $gap;
+  }
+}
