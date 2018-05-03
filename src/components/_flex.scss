@@ -1,0 +1,12 @@
+@import "../mixins";
+
+.Flex {
+  @include flexbox((
+    display: flex,
+    align-items: center
+  ));
+}
+
+.Flex-item {
+  @include flex(1);
+}
