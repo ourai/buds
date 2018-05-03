@@ -36,6 +36,13 @@ gulp.task("compile", tasks, () => {
     .pipe(gulp.dest(CSS_DIST));
 });
 
+gulp.task("compile-components", () => {
+  return gulp
+    .src("test/components/index.scss")
+    .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
+    .pipe(gulp.dest("test/components"));
+});
+
 gulp.task("compile-themes", () => {
   return gulp
     .src("test/themes/*/index.scss")
@@ -43,6 +50,6 @@ gulp.task("compile-themes", () => {
     .pipe(gulp.dest("test/themes"));
 });
 
-gulp.task("test", ["compile-themes"]);
+gulp.task("test", ["compile-components", "compile-themes"]);
 
 gulp.task("default", ["compile"]);

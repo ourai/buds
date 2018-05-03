@@ -1,0 +1,27 @@
+$figure-interactive: false !default;
+
+$figure-border-radius: 6px !default;
+$figure-bg-color: #a6a6a6 !default;
+
+$figure-caption-padding: 5px !default;
+$figure-caption-vertical-padding: $figure-caption-padding !default;
+$figure-caption-horizontal-padding: $figure-caption-padding !default;
+$figure-caption-font-size: 12px !default;
+$figure-caption-text-color: #fff !default;
+$figure-caption-bg-color: rgba(0, 0, 0, .5);
+
+$figure-placeholder-border-width: 2px !default;
+$figure-placeholder-border-color: $figure-bg-color !default;
+$figure-placeholder-bg-color: transparent !default;
+
+$figure-waiting-text: "图片正在上传" !default;
+$figure-blank-text: "暂无图片" !default;
+
+$figure-deletion-width: 30px !default;
+$figure-deletion-height: $figure-deletion-width !default;
+$figure-deletion-offset-top: -($figure-deletion-height / 2) !default;
+$figure-deletion-offset-right: -($figure-deletion-width / 2) !default;
+$figure-deletion-border-radius: 50% !default;
+$figure-deletion-bg-color: #000 !default;
+$figure-deletion-text-color: #fff !default;
+$figure-deletion-font-size: 20px !default;

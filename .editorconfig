@@ -2,7 +2,7 @@
 
 root = true
 
-[*.{html,js,es6,css,scss}]
+[*.{html,css,scss,js}]
 charset = utf-8
 indent_style = space
 indent_size = 2
