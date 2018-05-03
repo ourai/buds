@@ -1,22 +1,22 @@
-.Figure {
+.#{$figure-prefix} {
   position: relative;
   text-align: center;
   background-color: $figure-bg-color;
 
   @if whether-non-zero($figure-border-radius) {
     &,
-    &:not(.Figure--add) > div {
+    &:not(.#{$figure-prefix}--add) > div {
       @include border-radius($figure-border-radius);
     }
   }
 
-  &:not(.Figure--add) > div,
-  &.Figure--add {
+  &:not(.#{$figure-prefix}--add) > div,
+  &.#{$figure-prefix}--add {
     @include aspect_ratio(4, 3);
   }
 
   @if $figure-interactive {
-    &.Figure--add {
+    &.#{$figure-prefix}--add {
       border: $figure-placeholder-border-width dashed $figure-placeholder-border-color;
       background-color: $figure-placeholder-bg-color;
   
@@ -35,8 +35,8 @@
     }
   
     &.is-empty,
-    &:not(.is-empty) + .Figure--add,
-    &.is-uploading .Figure-button {
+    &:not(.is-empty) + .#{$figure-prefix}--add,
+    &.is-uploading .#{$figure-prefix}-button {
       display: none;
     }
   
@@ -113,20 +113,20 @@
   }
 }
 
-figure.Figure {
+figure.#{$figure-prefix} {
   z-index: 2;
   margin: 0;
 }
 
 @if $figure-interactive {
-  button.Figure {
+  button.#{$figure-prefix} {
     display: block;
     z-index: 1;
     width: 100%;
     padding: 0;
   }
   
-  .Figure-button {
+  .#{$figure-prefix}-button {
     position: absolute;
     top: $figure-deletion-offset-top;
     right: $figure-deletion-offset-right;
