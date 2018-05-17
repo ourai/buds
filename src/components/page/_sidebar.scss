@@ -68,7 +68,7 @@
     }
 
     &.Menu--grouped:first-child {
-      padding-top: 10px;
+      padding-top: rem(10px);
     }
   }
 
@@ -84,10 +84,10 @@
     }
 
     + .Menu--grouped {
-      padding-top: 5px;
+      padding-top: rem(5px);
 
       .Menu-label {
-        margin-top: 5px;
+        margin-top: rem(5px);
       }
     }
   }
@@ -95,12 +95,12 @@
   .Menu-switcher {
     position: absolute;
     top: 50%;
-    right: 10px;
-    margin-top: -7px;
+    right: rem(10px);
+    margin-top: rem(-7px);
     line-height: 1;
 
     .fa {
-      margin-right: 5px;
+      margin-right: rem(5px);
       @include transition(transform .3s ease);
     }
   }
@@ -113,36 +113,36 @@
 
       > .Navs {
         position: absolute;
-        top: -5px;
+        top: rem(-5px);
         left: 100%;
-        padding-left: 10px;
+        padding-left: rem(10px);
 
         ul {
           position: relative;
-          padding: 5px 1px;
-          border-radius: 2px;
+          padding: rem(5px 1px);
+          border-radius: rem(2px);
           background-color: #fff;
-          @include box-shadow(1px 1px 10px 1px rgba(0, 0, 0, .3));
+          @include box-shadow(rem(1px) rem(1px) rem(10px) rem(1px) rgba(0, 0, 0, .3));
 
           &:before {
             content: $UN-space;
             position: absolute;
-            top: 21px;
+            top: rem(21px);
             right: 100%;
             width: 0;
             height: 0;
-            border: 8px solid transparent;
+            border: rem(8px) solid transparent;
             border-right-color: #fff;
             border-left-width: 0;
           }
         }
 
         li {
-          min-width: 120px;
+          min-width: rem(120px);
           @include nowrap;
 
           a {
-            padding: 0 25px;
+            padding: rem(0 25px);
           }
         }
       }

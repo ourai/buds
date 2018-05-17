@@ -1,9 +1,9 @@
-$figure-border-radius: 3px !default;
+$figure-border-radius: rem(3px) !default;
 $figure-bg-color: #f3f4f5 !default;
 
-$figure-caption-padding: 5px !default;
+$figure-caption-padding: rem(5px) !default;
 $figure-caption-vertical-padding: $figure-caption-padding !default;
 $figure-caption-horizontal-padding: $figure-caption-padding !default;
-$figure-caption-font-size: 12px !default;
+$figure-caption-font-size: rem(12px) !default;
 $figure-caption-text-color: #fff !default;
 $figure-caption-bg-color: rgba(0, 0, 0, .3) !default;

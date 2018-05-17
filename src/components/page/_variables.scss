@@ -9,7 +9,7 @@ $page-body-selector: ".#{$page-prefix}-body" !default;
 $page-content-selector: ".#{$page-prefix}-content" !default;
 $page-footer-selector: ".#{$page-prefix}-footer" !default;
 
-$page-sidebar-width: 220px !default;
+$page-sidebar-width: rem(220px) !default;
 $page-sidebar-vertical-padding: 0 !default;
 $page-sidebar-top-padding: $page-sidebar-vertical-padding !default;
 $page-sidebar-bottom-padding: $page-sidebar-vertical-padding !default;
@@ -19,14 +19,14 @@ $page-sidebar-font-weight: $font-weight-base !default;
 $page-sidebar-line-height: $line-height-base !default;
 $page-sidebar-text-color: $text-color !default;
 $page-sidebar-text-hover: $page-sidebar-text-color !default;
-$page-sidebar-item-height: 48px !default;
-$page-sidebar-item-padding: 25px !default;
+$page-sidebar-item-height: rem(48px) !default;
+$page-sidebar-item-padding: rem(25px) !default;
 $page-sidebar-item-hover: transparent !default;
 $page-sidebar-item-active: $page-sidebar-item-hover !default;
 $page-sidebar-sub-bg-color: transparent !default;
 $page-sidebar-box-shadow: none !default;
 
-$page-header-height: 60px !default;
+$page-header-height: rem(60px) !default;
 $page-header-horizontal-padding: 0 !default;
 $page-header-right-padding: $page-header-horizontal-padding !default;
 $page-header-left-padding: $page-header-horizontal-padding !default;
@@ -40,22 +40,22 @@ $page-header-box-shadow: none !default;
 
 $page-body-bg-color: #fff !default;
 
-$page-content-top-padding: 30px !default;
-$page-content-bottom-padding: 30px !default;
-$page-content-heading-font-size: 24px !default;
+$page-content-top-padding: rem(30px) !default;
+$page-content-bottom-padding: rem(30px) !default;
+$page-content-heading-font-size: rem(24px) !default;
 
 $page-footer-height: auto !default;
 
-$page-brand-image-height: 24px !default;
-$page-brand-font-size: 22px !default;
+$page-brand-image-height: rem(24px) !default;
+$page-brand-font-size: rem(22px) !default;
 $page-brand-font-weight: inherit !default;
 $page-brand-text-color: $text-color !default;
 $page-brand-bg-color: transparent !default;
 $page-brand-separator-color: transparent !default;
 $page-brand-separator-gap: 0 !default;
-$page-brand-separator-offset: 10px !default;
+$page-brand-separator-offset: rem(10px) !default;
 
-$page-navbar-avatar-size: 30px !default;
+$page-navbar-avatar-size: rem(30px) !default;
 
 $page-action-trigger-color: $page-brand-text-color !default;
 

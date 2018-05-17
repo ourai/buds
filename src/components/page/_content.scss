@@ -6,13 +6,13 @@
 }
 
 .Content-header {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   @include pie-clearfix;
 
   h1 {
     margin: 0;
     font-size: $page-content-heading-font-size;
-    text-shadow: 1px 1px rgba(255, 255, 255, .5);
+    text-shadow: rem(1px 1px rgba(255, 255, 255, .5));
   }
 
   .Breadcrumb {
@@ -21,18 +21,18 @@
 
     ul {
       list-style: none inside none;
-      margin: 0 0 0 8px;
+      margin: rem(0 0 0 8px);
       padding: 0;
       overflow: hidden;
     }
 
     li {
       float: left;
-      font-size: 12px;
+      font-size: rem(12px);
 
       + li:before {
         content: "/";
-        margin: 0 5px;
+        margin: rem(0 5px);
       }
     }
   }

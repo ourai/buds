@@ -49,9 +49,9 @@
 }
 
 @mixin sidebar-menu-label {
-  margin-bottom: 5px;
-  line-height: 20px;
-  font-size: 12px;
+  margin-bottom: rem(5px);
+  line-height: rem(20px);
+  font-size: rem(12px);
   color: #999;
 
   &,
@@ -61,9 +61,9 @@
 
   span {
     z-index: 1;
-    margin-left: 15px;
-    padding: 0 5px;
-    text-shadow: 1px 1px 3px #fff;
+    margin-left: rem(15px);
+    padding: rem(0 5px);
+    text-shadow: rem(1px) rem(1px) rem(3px) #fff;
     background-color: #eee;
   }
 
@@ -86,14 +86,14 @@
 
   > .fa {
     $iconWidth: (18 / 14);      // 与 Font Awesome 的 .fa-fw 相同
-    $iconFontSize: 16px;
+    $iconFontSize: rem(16px);
 
     width: #{$iconWidth}em;
     font-size: $iconFontSize;
     text-align: center;
 
     + span {
-      $menuTextGap: 14px;
+      $menuTextGap: rem(14px);
 
       max-width: ($page-sidebar-width - $menuGap * 2 - $iconWidth * $iconFontSize - $menuTextGap);
       margin-left: $menuTextGap;
@@ -110,10 +110,10 @@
 }
 
 @mixin sidebar-menu-secondary {
-  $subHeight: 22px;
-  $subGap: (36px - $subHeight) / 2;
+  $subHeight: rem(22px);
+  $subGap: (rem(36px) - $subHeight) / 2;
 
-  padding: $subGap 10px $subGap 59px;
+  padding: $subGap rem(10px) $subGap rem(59px);
   line-height: $subHeight;
   @include line_feed;
 }
@@ -127,10 +127,10 @@
     left: 0;
     max-width: none;
     max-height: none;
-    clip: rect(0px, 34px, 24px, 0px);
+    clip: rect(rem(0px), rem(34px), rem(24px), rem(0px));
 
     + span {
-      margin-left: 30px;
+      margin-left: rem(30px);
     }
   }
 }
