@@ -29,6 +29,6 @@
   ],
   "devDependencies": {
     "suitcss-sass-0.1.0": "suitcss-sass#0.1.0",
-    "trick-1.0.1": "packagent/trick#1.0.1"
+    "trick-1.0.2": "packagent/trick#1.0.2"
   }
 }
