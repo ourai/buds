@@ -35,6 +35,8 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-css-comments": "^2.0.0",
     "http-server": "^0.11.1",
-    "suitcss-base": "^4.0.0"
+    "suitcss-base": "^4.0.0",
+    "suitcss-utils-flex": "^2.0.1",
+    "suitcss-utils-size": "^2.0.1"
   }
 }
