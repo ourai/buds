@@ -12,7 +12,7 @@
   }
 
   > div {
-    @include aspect_ratio(4, 3);
+    @include aspect_ratio($figure-aspect-ratio-width, $figure-aspect-ratio-height);
   }
 
   a {
