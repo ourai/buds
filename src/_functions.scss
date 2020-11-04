@@ -1,3 +1,11 @@
+@function get-selector($component-name) {
+  @if $buds--component-prefix == '' {
+    @return '.' + $component-name;
+  } @else {
+    @return '.' + $buds--component-prefix + '-' + $component-name;
+  }
+}
+
 @function whether-zero-pixel( $number ) {
   @return $number == 0 or $number == 0px or $number == 0%;
 }

@@ -3,25 +3,25 @@
   z-index: 99;
   overflow: visible !important;
 
-  @if whether-non-zero($page-header-right-padding) {
-    padding-right: $page-header-right-padding;
+  @if whether-non-zero($buds--page-header-right-padding) {
+    padding-right: $buds--page-header-right-padding;
   }
 
-  @if whether-non-zero($page-header-left-padding) {
-    padding-left: $page-header-left-padding;
+  @if whether-non-zero($buds--page-header-left-padding) {
+    padding-left: $buds--page-header-left-padding;
   }
-  
-  border-bottom: $page-header-border-width solid $page-header-border-color;
-  background-color: $page-header-bg-color;
+
+  border-bottom: $buds--page-header-border-width solid $buds--page-header-border-color;
+  background-color: $buds--page-header-bg-color;
   font: {
-    size: $page-header-font-size;
-    weight: $page-header-font-weight;
+    size: $buds--page-header-font-size;
+    weight: $buds--page-header-font-weight;
   }
-  
+
   @include pie-clearfix;
 
-  @if $page-header-box-shadow != none {
-    @include box-shadow($page-header-box-shadow);
+  @if $buds--page-header-box-shadow != none {
+    @include box-shadow($buds--page-header-box-shadow);
   }
 }
 
@@ -49,7 +49,7 @@
   }
 
   a {
-    color: #fff;
+    color: $__buds--white;
   }
 }
 
@@ -63,14 +63,14 @@
 .Header-toggle {
   display: none;
   margin: {
-    top: ($page-header-height - rem(18px)) / 2;
+    top: ($buds--page-header-height - rem(18px)) / 2;
     right: rem(10px);
   }
   padding: 0;
   border-style: none;
   line-height: 1;
   font-size: rem(18px);
-  color: $page-action-trigger-color;
+  color: $buds--page-action-trigger-color;
   background-color: transparent;
 }
 
@@ -85,13 +85,13 @@
 
     li.is-active a,
     a:hover {
-      border-bottom-color: $page-header-border-color;
+      border-bottom-color: $buds--page-header-border-color;
     }
 
     a {
       height: 100%;
       padding: rem(0 20px);
-      line-height: $page-header-height;
+      line-height: $buds--page-header-height;
       font-size: rem(16px);
       border-bottom: rem(2px) solid transparent;
     }
@@ -104,7 +104,7 @@
   .Header-navs {
     li.is-active a,
     a:hover {
-      background-color: $page-header-border-color;
+      background-color: $buds--page-header-border-color;
     }
 
     a {
@@ -130,7 +130,7 @@
     &.fa {
       width: rem(18px);
       font-size: rem(18px);
-      color: $page-action-trigger-color;
+      color: $buds--page-action-trigger-color;
     }
   }
 
@@ -152,7 +152,7 @@
       margin-bottom: rem(-5px);
       padding: rem(0 4px);
       font: {
-        family: $font-family-sans-serif;
+        family: $buds--font-family-sans-serif;
         size: rem(12px);
         weight: 300;
       }
@@ -168,17 +168,17 @@
       img,
       span {
         display: block;
-        width: $page-navbar-avatar-size;
-        height: $page-navbar-avatar-size;
+        width: $buds--page-navbar-avatar-size;
+        height: $buds--page-navbar-avatar-size;
         border-radius: 50%;
       }
 
       span {
-        line-height: $page-navbar-avatar-size;
+        line-height: $buds--page-navbar-avatar-size;
         text-align: center;
         font: {
           size: rem(10px);
-          weight: $font-weight-base;
+          weight: $buds--font-weight;
         }
         background-color: #E0F2F1;
         @include ellipsis;
@@ -199,7 +199,7 @@
       color: rgba(0, 0, 0, .2);
       radius: rem(2px);
     }
-    background-color: #fff;
+    background-color: $__buds--white;
     @include box-shadow(0 rem(2px) rem(10px) rgba(0, 0, 0, .2));
 
     .Card-content,
@@ -238,7 +238,7 @@
       }
       border: rem(8px) solid transparent;
       border-top-width: 0;
-      border-bottom-color: #fff;
+      border-bottom-color: $__buds--white;
     }
 
     &.Action--avatar:after {

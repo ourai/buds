@@ -1,6 +1,8 @@
-@import "vendors/suitcss/suitcss-base/index";
+/**
+ * Base styles for web apps
+ */
 
-@import "variables";
-@import "mixins";
+@import "./helper";
 
-@import "base/reset";
+@import "./vendors/suitcss/suitcss-base/index";
+@import "./base/reset";

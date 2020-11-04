@@ -1,35 +1,35 @@
 .Sidebar {
   float: left;
-  width: $page-sidebar-width;
-  background-color: $page-sidebar-bg-color;
+  width: $buds--page-sidebar-width;
+  background-color: $buds--page-sidebar-bg-color;
   font: {
-    size: $page-sidebar-font-size;
-    weight: $page-sidebar-font-weight;
+    size: $buds--page-sidebar-font-size;
+    weight: $buds--page-sidebar-font-weight;
   }
 
-  @if $page-sidebar-box-shadow != none {
-    @include box-shadow($page-sidebar-box-shadow);
+  @if $buds--page-sidebar-box-shadow != none {
+    @include box-shadow($buds--page-sidebar-box-shadow);
   }
 
   .Navs > ul > li > a {
     display: block;
-    color: $page-sidebar-text-color;
+    color: $buds--page-sidebar-text-color;
     @include transition(background-color .3s);
-  
+
     &:hover {
-      color: $page-sidebar-text-hover;
-      background-color: $page-sidebar-item-hover;
+      color: $buds--page-sidebar-text-hover;
+      background-color: $buds--page-sidebar-item-hover;
     }
   }
 }
 
 .Sidebar-navs {
-  @if whether-non-zero($page-sidebar-top-padding) {
-    padding-top: $page-sidebar-top-padding;
+  @if whether-non-zero($buds--page-sidebar-top-padding) {
+    padding-top: $buds--page-sidebar-top-padding;
   }
 
-  @if whether-non-zero($page-sidebar-bottom-padding) {
-    padding-bottom: $page-sidebar-bottom-padding;
+  @if whether-non-zero($buds--page-sidebar-bottom-padding) {
+    padding-bottom: $buds--page-sidebar-bottom-padding;
   }
 
   > ul {
@@ -40,7 +40,7 @@
 
       > .Navs {
         display: none;
-        background-color: $page-sidebar-sub-bg-color;
+        background-color: $buds--page-sidebar-sub-bg-color;
 
         a {
           @include sidebar-menu-secondary;
@@ -50,7 +50,7 @@
       &.is-active {
         &.is-childless > a,
         > .Navs .is-active a {
-          background-color: $page-sidebar-item-active;
+          background-color: $buds--page-sidebar-item-active;
         }
 
         > .Navs {
@@ -121,7 +121,7 @@
           position: relative;
           padding: rem(5px 1px);
           border-radius: rem(2px);
-          background-color: #fff;
+          background-color: $__buds--white;
           @include box-shadow(rem(1px) rem(1px) rem(10px) rem(1px) rgba(0, 0, 0, .3));
 
           &:before {
@@ -132,7 +132,7 @@
             width: 0;
             height: 0;
             border: rem(8px) solid transparent;
-            border-right-color: #fff;
+            border-right-color: $__buds--white;
             border-left-width: 0;
           }
         }

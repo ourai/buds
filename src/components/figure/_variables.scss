@@ -1,12 +1,12 @@
-$figure-border-radius: rem(3px) !default;
-$figure-bg-color: #f3f4f5 !default;
+$buds--figure-border-radius: rem(3px) !default;
+$buds--figure-bg-color: #f3f4f5 !default;
 
-$figure-aspect-ratio-width: 4 !default;
-$figure-aspect-ratio-height: 3 !default;
+$buds--figure-aspect-ratio-width: 4 !default;
+$buds--figure-aspect-ratio-height: 3 !default;
 
-$figure-caption-padding: rem(5px) !default;
-$figure-caption-vertical-padding: $figure-caption-padding !default;
-$figure-caption-horizontal-padding: $figure-caption-padding !default;
-$figure-caption-font-size: rem(12px) !default;
-$figure-caption-text-color: #fff !default;
-$figure-caption-bg-color: rgba(0, 0, 0, .3) !default;
+$buds--figure-caption-padding: rem(5px) !default;
+$buds--figure-caption-vertical-padding: $buds--figure-caption-padding !default;
+$buds--figure-caption-horizontal-padding: $buds--figure-caption-padding !default;
+$buds--figure-caption-font-size: rem(12px) !default;
+$buds--figure-caption-text-color: $__buds--white !default;
+$buds--figure-caption-bg-color: rgba(0, 0, 0, .3) !default;
