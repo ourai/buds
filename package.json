@@ -6,6 +6,8 @@
   "scripts": {
     "clean:docs": "rm -rf ./docs/.asset-cache",
     "serve": "cd ./docs && rake run",
+    "predeploy": "npm run clean:docs",
+    "deploy": "cd ./docs && rake deploy",
     "precompile": "rm -rf dist/css",
     "compile": "gulp compile",
     "pretest": "gulp test",

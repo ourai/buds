@@ -10,15 +10,14 @@ end
 
 desc "部署"
 task :deploy do
-  git_url = ""
+  git_url = "https://github.com/ourai/buds.git"
   git_branch = "gh-pages"
-  cname_domain = ""
-  dir_name = ""
+  dir_name = "buds"
 
-  dir = "../.tmp/#{dir_name}"
+  dir = "../../.tmp/#{dir_name}"
 
   unless FileTest.directory?("../.tmp")
-    system "mkdir ../.tmp"
+    system "mkdir ../../.tmp"
   end
 
   unless FileTest.directory?(dir)
@@ -44,8 +43,6 @@ task :deploy do
     current_time = Time.now.strftime("%Y-%m-%d %H:%M:%S")
 
     system "touch .nojekyll"
-    system "touch CNAME"
-    system "echo #{cname_domain} > CNAME"
     system "git add -A"
     system "git commit -m 'build: generate on #{current_time}'"
     system "git push origin #{git_branch}"
