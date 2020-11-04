@@ -1,12 +1,9 @@
-@import "../variables";
-@import "../functions";
-@import "../mixins";
-@import "../flexible";
+@import "../helper";
 
-@import "page/variables";
-@import "page/mixins";
+@import "./page/variables";
+@import "./page/mixins";
 
-@import "page/layout";
-@import "page/sidebar";
-@import "page/header";
-@import "page/content";
+@import "./page/layout";
+@import "./page/sidebar";
+@import "./page/header";
+@import "./page/content";
