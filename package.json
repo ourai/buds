@@ -4,6 +4,8 @@
   "description": "CSS framework following SUIT CSS naming conventions",
   "main": "scss/_all.scss",
   "scripts": {
+    "clean:docs": "rm -rf ./docs/.asset-cache",
+    "serve": "cd ./docs && rake run",
     "precompile": "rm -rf dist/css",
     "compile": "gulp compile",
     "pretest": "gulp test",
@@ -34,6 +36,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-css-comments": "^2.0.0",
+    "handie": "^1.0.14",
     "http-server": "^0.11.1",
     "suitcss-base": "^4.0.0",
     "suitcss-utils-flex": "^2.0.1",
