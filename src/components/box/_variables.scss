@@ -1,12 +1,12 @@
-$box-bg-color: #fff !default;
-$box-border-radius: rem(3px) !default;
-$box-box-shadow: rem(0 1px 4px 0 rgba(0, 0, 0, 0.14)) !default;
+$buds--box-bg-color: $__buds--white !default;
+$buds--box-border-radius: rem(3px) !default;
+$buds--box-box-shadow: rem(0 1px 4px 0 rgba(0, 0, 0, 0.14)) !default;
 
-$box-padding: rem(15px) !default;
-$box-vertical-padding: $box-padding !default;
-$box-horizontal-padding: $box-padding !default;
+$buds--box-padding: rem(15px) !default;
+$buds--box-vertical-padding: $buds--box-padding !default;
+$buds--box-horizontal-padding: $buds--box-padding !default;
 
-$box-siblings-space: rem(20px) !default;
+$buds--box-siblings-space: rem(20px) !default;
 
-$box-header-height: rem(54px) !default;
-$box-footer-height: auto !default;
+$buds--box-header-height: rem(54px) !default;
+$buds--box-footer-height: auto !default;

@@ -1,25 +1,25 @@
 .Box {
   display: block;
-  background-color: $box-bg-color;
+  background-color: $buds--box-bg-color;
 
-  @if $box-box-shadow != none {
-    @include box-shadow($box-box-shadow);
+  @if $buds--box-box-shadow != none {
+    @include box-shadow($buds--box-box-shadow);
   }
 
-  @if whether-non-zero($box-border-radius) {
-    @include border-radius($box-border-radius);
+  @if whether-non-zero($buds--box-border-radius) {
+    @include border-radius($buds--box-border-radius);
   }
 
-  @if whether-non-zero($box-vertical-padding) or whether-non-zero($box-horizontal-padding) {
+  @if whether-non-zero($buds--box-vertical-padding) or whether-non-zero($buds--box-horizontal-padding) {
     .Box-body,
     .Box-footer {
-      padding: $box-vertical-padding $box-horizontal-padding;
+      padding: $buds--box-vertical-padding $buds--box-horizontal-padding;
     }
   }
 
-  @if whether-non-zero($box-siblings-space) {
+  @if whether-non-zero($buds--box-siblings-space) {
     + .Box {
-      margin-top: $box-siblings-space;
+      margin-top: $buds--box-siblings-space;
     }
   }
 }
@@ -30,8 +30,8 @@
 
 .Box--fixedHeight {
   @include fixed-body-height(
-    ".Box-header", $box-header-height,
-    ".Box-footer", $box-footer-height,
+    ".Box-header", $buds--box-header-height,
+    ".Box-footer", $buds--box-footer-height,
     ".Box-body"
   );
 }

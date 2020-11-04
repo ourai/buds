@@ -7,7 +7,7 @@
 }
 
 .ImageList-group {
-  $gap: half($image-list-gutter);
+  $gap: half($buds--image-list-gutter);
 
   margin: {
     right: -$gap;
@@ -16,12 +16,12 @@
   @include pie-clearfix;
 
   + .ImageList-group {
-    margin-top: $image-list-gutter;
+    margin-top: $buds--image-list-gutter;
   }
 }
 
 .ImageList-item {
-  $gap: half($image-list-gutter);
+  $gap: half($buds--image-list-gutter);
 
   float: left;
   width: percentage(1 / 3);

@@ -1,7 +1,7 @@
 .Content {
   padding: {
-    top: $page-content-top-padding;
-    bottom: $page-content-bottom-padding;
+    top: $buds--page-content-top-padding;
+    bottom: $buds--page-content-bottom-padding;
   }
 }
 
@@ -11,7 +11,7 @@
 
   h1 {
     margin: 0;
-    font-size: $page-content-heading-font-size;
+    font-size: $buds--page-content-heading-font-size;
     text-shadow: rem(1px 1px rgba(255, 255, 255, .5));
   }
 

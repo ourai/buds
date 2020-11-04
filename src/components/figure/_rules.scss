@@ -2,17 +2,17 @@
   position: relative;
   margin: 0;
   text-align: center;
-  background-color: $figure-bg-color;
+  background-color: $buds--figure-bg-color;
 
-  @if whether-non-zero($figure-border-radius) {
+  @if whether-non-zero($buds--figure-border-radius) {
     &,
     > div {
-      @include border-radius($figure-border-radius);
+      @include border-radius($buds--figure-border-radius);
     }
   }
 
   > div {
-    @include aspect_ratio($figure-aspect-ratio-width, $figure-aspect-ratio-height);
+    @include aspect_ratio($buds--figure-aspect-ratio-width, $buds--figure-aspect-ratio-height);
   }
 
   a {
@@ -24,22 +24,22 @@
   }
 
   figcaption {
-    font-size: $figure-caption-font-size;
-    color: $figure-caption-text-color;
-    background-color: $figure-caption-bg-color;
+    font-size: $buds--figure-caption-font-size;
+    color: $buds--figure-caption-text-color;
+    background-color: $buds--figure-caption-bg-color;
     @include stretch(auto);
 
-    @if whether-non-zero($figure-caption-vertical-padding) or whether-non-zero($figure-caption-horizontal-padding) {
-      @if $figure-caption-vertical-padding == $figure-caption-horizontal-padding {
-        padding: $figure-caption-vertical-padding;
+    @if whether-non-zero($buds--figure-caption-vertical-padding) or whether-non-zero($buds--figure-caption-horizontal-padding) {
+      @if $buds--figure-caption-vertical-padding == $buds--figure-caption-horizontal-padding {
+        padding: $buds--figure-caption-vertical-padding;
       }
       @else {
-        padding: $figure-caption-vertical-padding $figure-caption-horizontal-padding;
+        padding: $buds--figure-caption-vertical-padding $buds--figure-caption-horizontal-padding;
       }
     }
-      
-    @if whether-non-zero($figure-border-radius) {
-      @include border-radius(0 0 $figure-border-radius $figure-border-radius);
+
+    @if whether-non-zero($buds--figure-border-radius) {
+      @include border-radius(0 0 $buds--figure-border-radius $buds--figure-border-radius);
     }
   }
 }
