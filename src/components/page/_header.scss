@@ -10,14 +10,14 @@
   @if whether-non-zero($page-header-left-padding) {
     padding-left: $page-header-left-padding;
   }
-  
+
   border-bottom: $page-header-border-width solid $page-header-border-color;
   background-color: $page-header-bg-color;
   font: {
     size: $page-header-font-size;
     weight: $page-header-font-weight;
   }
-  
+
   @include pie-clearfix;
 
   @if $page-header-box-shadow != none {
@@ -152,7 +152,7 @@
       margin-bottom: rem(-5px);
       padding: rem(0 4px);
       font: {
-        family: $font-family-sans-serif;
+        family: $buds--font-family-sans-serif;
         size: rem(12px);
         weight: 300;
       }
@@ -178,7 +178,7 @@
         text-align: center;
         font: {
           size: rem(10px);
-          weight: $font-weight-base;
+          weight: $buds--font-weight;
         }
         background-color: #E0F2F1;
         @include ellipsis;

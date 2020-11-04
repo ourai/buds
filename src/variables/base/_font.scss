@@ -1,0 +1,36 @@
+$buds--font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, "Pingfang SC", "Microsoft Yahei", Sans-serif !default;
+$buds--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$buds--font-family: var($__buds--font-family, $buds--font-family-sans-serif) !default;
+
+// $buds--font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $buds--font-size effects the font size of the body text
+$buds--font-size-root: null !default;
+$buds--font-size: var($__buds--font-size, 14px) !default;
+$buds--font-size-lg: var($__buds--font-size-lg, 16px) !default;
+$buds--font-size-sm: var($__buds--font-size-sm, 12px) !default;
+
+$buds--font-weight-lighter: lighter !default;
+$buds--font-weight-light: 300 !default;
+$buds--font-weight-normal: 400 !default;
+$buds--font-weight-bold: 700 !default;
+$buds--font-weight-bolder: bolder !default;
+
+$buds--font-weight: var($__buds--font-weight, $buds--font-weight-normal) !default;
+
+$buds--line-height: var($__buds--line-height, 1.5) !default;
+$buds--line-height-lg: var($__buds--line-height-lg, 2) !default;
+$buds--line-height-sm: var($__buds--line-height-sm, 1.25) !default;
+
+$buds--h1-font-size: $buds--font-size * 2.5 !default;
+$buds--h2-font-size: $buds--font-size * 2 !default;
+$buds--h3-font-size: $buds--font-size * 1.75 !default;
+$buds--h4-font-size: $buds--font-size * 1.5 !default;
+$buds--h5-font-size: $buds--font-size * 1.25 !default;
+$buds--h6-font-size: $buds--font-size !default;
+
+// $buds--headings-margin-bottom: $buds--spacer / 2 !default;
+// $buds--headings-font-family: null !default;
+// $buds--headings-font-style: null !default;
+// $buds--headings-font-weight: 500 !default;
+// $buds--headings-line-height: 1.2 !default;
+// $buds--headings-color: null !default;

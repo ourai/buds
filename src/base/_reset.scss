@@ -4,14 +4,14 @@
 
 body {
   font: {
-    family: $font-family-base;
-    size: $font-size-base;
-    weight: $font-weight-base;
+    family: $buds--font-family;
+    size: $buds--font-size;
+    weight: $buds--font-weight;
   }
-  line-height: $line-height-base;
-  color: $text-color;
+  line-height: $buds--line-height;
+  color: $buds--text-regular;
 
-  @if $optimize-legibility == true {
+  @if $buds--optimize-legibility == true {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
