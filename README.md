@@ -1,4 +1,4 @@
-# Buds
+# [Buds](https://oss.ourai.ws/buds/)
 
 A CSS framework following [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md).
 
