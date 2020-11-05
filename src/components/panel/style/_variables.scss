@@ -1,0 +1,21 @@
+@import "../../border/style/variables";
+@import "./properties";
+
+$buds--panel-padding-y: 0 !default;
+$buds--panel-padding-x: 16px !default;
+$buds--panel-bg: $__buds--white !default;
+$buds--panel-border-width: var($__buds--border-width, $buds--border-width) !default;
+$buds--panel-border-color: var($__buds--border-color, $buds--border-color) !default;
+$buds--panel-border-radius: var($__buds--border-radius-lg, $buds--border-radius-lg) !default;
+$buds--panel-box-shadow: none !default;
+
+$buds--panel-header-height: 61px !default;
+$buds--panel-header-border-width: var($__buds--border-width, $buds--border-width) !default;
+$buds--panel-header-border-color: var($__buds--border-color, $buds--border-color) !default;
+$buds--panel-header-font-size: 18px !default;
+$buds--panel-header-font-weight: bold !default;
+$buds--panel-header-letter-spacing: 0 !default;
+$buds--panel-header-color: var($__buds--text-heading, $buds--text-heading) !default;
+
+$buds--panel-body-padding-y: 24px !default;
+$buds--panel-body-padding-x: 0 !default;
