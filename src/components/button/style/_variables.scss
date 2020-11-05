@@ -1,0 +1,208 @@
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$buds--button-min-width: 0 !default;
+$buds--button-max-width: none !default;
+$buds--button-between-gap: 8px !default;
+$buds--button-padding-y: 10px !default;
+$buds--button-padding-x: 20px !default;
+$buds--button-font-family: $buds--input-btn-font-family !default;
+$buds--button-font-size: var($__buds--font-size-base, $buds--font-size-base) !default;
+$buds--button-line-height: $buds--input-btn-line-height !default;
+$buds--button-white-space: null !default; // Set to `nowrap` to prevent text wrapping
+
+$buds--button-padding-y-lg: 12px !default;
+$buds--button-padding-x-lg: 20px !default;
+$buds--button-font-size-lg: var($__buds--form-control-font-size-lg, $buds--form-control-font-size-lg) !default;
+
+$buds--button-padding-y-sm: 9px !default;
+$buds--button-padding-x-sm: 15px !default;
+$buds--button-font-size-sm: var($__buds--form-control-font-size-sm, $buds--form-control-font-size-sm) !default;
+
+$buds--button-border-width: var($__buds--border-width, $buds--border-width) !default;
+
+$buds--button-font-weight: $buds--font-weight-normal !default;
+$buds--button-box-shadow: inset 0 1px 0 rgba($buds--white, 0.15), 0 1px 1px rgba($buds--black, 0.075) !default;
+$buds--button-focus-width: $buds--input-btn-focus-width !default;
+$buds--button-focus-box-shadow: $buds--input-btn-focus-box-shadow !default;
+$buds--button-active-box-shadow: inset 0 3px 5px rgba($buds--black, 0.125) !default;
+
+// $buds--button-link-color: $buds--link-color !default;
+// $buds--button-link-hover-color: $buds--link-hover-color !default;
+// $buds--button-link-disabled-color: $buds--disabled-color !default;
+
+$buds--button-block-spacing-y: 0.5rem !default;
+
+// Allows for customizing button radius independently from global border radius
+$buds--button-border-radius: var($__buds--form-control-border-radius, $buds--form-control-border-radius) !default;
+$buds--button-border-radius-lg: var($__buds--form-control-border-radius-lg, $buds--form-control-border-radius-lg) !default;
+$buds--button-border-radius-sm: var($__buds--form-control-border-radius-sm, $buds--form-control-border-radius-sm) !default;
+
+$buds--button-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+  box-shadow 0.15s ease-in-out !default;
+
+$buds--button-border-color: var($__buds--default-border-color, $buds--default-border-color) !default;
+$buds--button-color: var($__buds--default-color, $buds--default-color) !default;
+$buds--button-bg: var($__buds--default-bg, $buds--default-bg) !default;
+$buds--button-bg-image: var($__buds--default-bg-image, $buds--default-bg-image) !default;
+
+$buds--button-hover-border-color: var($__buds--default-hover-border-color, $buds--default-hover-border-color) !default;
+$buds--button-hover-color: var($__buds--default-hover-color, $buds--default-hover-color) !default;
+$buds--button-hover-bg: var($__buds--default-hover-bg, $buds--default-hover-bg) !default;
+$buds--button-hover-bg-image: var($__buds--default-hover-bg-image, $buds--default-hover-bg-image) !default;
+
+$buds--button-focus-border-color: var($__buds--default-active-border-color, $buds--default-active-border-color) !default;
+$buds--button-focus-color: var($__buds--default-active-color, $buds--default-active-color) !default;
+$buds--button-focus-bg: var($__buds--default-active-bg, $buds--default-active-bg) !default;
+$buds--button-focus-bg-image: var($__buds--default-active-bg-image, $buds--default-active-bg-image) !default;
+
+$buds--button-disabled-border-color: var($__buds--default-disabled-border-color, $buds--default-disabled-border-color) !default;
+$buds--button-disabled-color: var($__buds--default-disabled-color, $buds--default-disabled-color) !default;
+$buds--button-disabled-bg: var($__buds--default-disabled-bg, $buds--default-disabled-bg) !default;
+$buds--button-disabled-bg-image: var($__buds--default-disabled-bg-image, $buds--default-disabled-bg-image) !default;
+$buds--button-disabled-opacity: var($__buds--default-disabled-opacity, $buds--default-disabled-opacity) !default;
+
+$buds--button-primary-border-color: var($__buds--primary-border-color, $buds--primary-border-color) !default;
+$buds--button-primary-color: var($__buds--primary-color, $buds--primary-color) !default;
+$buds--button-primary-bg: var($__buds--primary-bg, $buds--primary-bg) !default;
+$buds--button-primary-bg-image: var($__buds--primary-bg-image, $buds--primary-bg-image) !default;
+
+$buds--button-primary-box-shadow: 0 1px 4px 0 rgba(56, 130, 245, 0.2) !default;
+$buds--button-primary-light: #63a4ff !default;
+$buds--button-primary-dark: #2560cf !default;
+
+$buds--button-primary-hover-border-color: var($__buds--primary-hover-border-color, $buds--primary-hover-border-color) !default;
+$buds--button-primary-hover-color: var($__buds--primary-hover-color, $buds--primary-hover-color) !default;
+$buds--button-primary-hover-bg: var($__buds--primary-hover-bg, $buds--primary-hover-bg) !default;
+$buds--button-primary-hover-bg-image: var($__buds--primary-hover-bg-image, $buds--primary-hover-bg-image) !default;
+
+$buds--button-primary-focus-border-color: var(
+  $__buds--primary-active-border-color,
+  $buds--primary-active-border-color
+) !default;
+$buds--button-primary-focus-color: var($__buds--primary-active-color, $buds--primary-active-color) !default;
+$buds--button-primary-focus-bg: var($__buds--primary-active-bg, $buds--primary-active-bg) !default;
+$buds--button-primary-focus-bg-image: var($__buds--primary-active-bg-image, $buds--primary-active-bg-image) !default;
+
+$buds--button-primary-disabled-border-color: var(
+  $__buds--primary-disabled-border-color,
+  $buds--primary-disabled-border-color
+) !default;
+$buds--button-primary-disabled-color: var($__buds--primary-disabled-color, $buds--primary-disabled-color) !default;
+$buds--button-primary-disabled-bg: var($__buds--primary-disabled-bg, $buds--primary-disabled-bg) !default;
+$buds--button-primary-disabled-bg-image: var($__buds--primary-disabled-bg-image, $buds--primary-disabled-bg-image) !default;
+$buds--button-primary-disabled-opacity: var($__buds--primary-disabled-opacity, $buds--primary-disabled-opacity) !default;
+
+$buds--button-info-border-color: var($__buds--info-border-color, $buds--info-border-color) !default;
+$buds--button-info-color: var($__buds--info-color, $buds--info-color) !default;
+$buds--button-info-bg: var($__buds--info-bg, $buds--info-bg) !default;
+$buds--button-info-bg-image: var($__buds--info-bg-image, $buds--info-bg-image) !default;
+
+$buds--button-info-box-shadow: var($__buds--button-box-shadow, $buds--button-box-shadow) !default;
+
+$buds--button-info-hover-border-color: var($__buds--info-hover-border-color, $buds--info-hover-border-color) !default;
+$buds--button-info-hover-color: var($__buds--info-hover-color, $buds--info-hover-color) !default;
+$buds--button-info-hover-bg: var($__buds--info-hover-bg, $buds--info-hover-bg) !default;
+$buds--button-info-hover-bg-image: var($__buds--info-hover-bg-image, $buds--info-hover-bg-image) !default;
+
+$buds--button-info-focus-border-color: var($__buds--info-active-border-color, $buds--info-active-border-color) !default;
+$buds--button-info-focus-color: var($__buds--info-active-color, $buds--info-active-color) !default;
+$buds--button-info-focus-bg: var($__buds--info-active-bg, $buds--info-active-bg) !default;
+$buds--button-info-focus-bg-image: var($__buds--info-active-bg-image, $buds--info-active-bg-image) !default;
+
+$buds--button-info-disabled-border-color: var($__buds--info-disabled-border-color, $buds--info-disabled-border-color) !default;
+$buds--button-info-disabled-color: var($__buds--info-disabled-color, $buds--info-disabled-color) !default;
+$buds--button-info-disabled-bg: var($__buds--info-disabled-bg, $buds--info-disabled-bg) !default;
+$buds--button-info-disabled-bg-image: var($__buds--info-disabled-bg-image, $buds--info-disabled-bg-image) !default;
+$buds--button-info-disabled-opacity: var($__buds--info-disabled-opacity, $buds--info-disabled-opacity) !default;
+
+$buds--button-success-border-color: var($__buds--success-border-color, $buds--success-border-color) !default;
+$buds--button-success-color: var($__buds--success-color, $buds--success-color) !default;
+$buds--button-success-bg: var($__buds--success-bg, $buds--success-bg) !default;
+$buds--button-success-bg-image: var($__buds--success-bg-image, $buds--success-bg-image) !default;
+
+$buds--button-success-box-shadow: var($__buds--button-box-shadow, $buds--button-box-shadow) !default;
+$buds--button-success-light: $buds--button-success-color !default;
+$buds--button-success-dark: $buds--button-success-color !default;
+
+$buds--button-success-hover-border-color: var($__buds--success-hover-border-color, $buds--success-hover-border-color) !default;
+$buds--button-success-hover-color: var($__buds--success-hover-color, $buds--success-hover-color) !default;
+$buds--button-success-hover-bg: var($__buds--success-hover-bg, $buds--success-hover-bg) !default;
+$buds--button-success-hover-bg-image: var($__buds--success-hover-bg-image, $buds--success-hover-bg-image) !default;
+
+$buds--button-success-focus-border-color: var(
+  $__buds--success-active-border-color,
+  $buds--success-active-border-color
+) !default;
+$buds--button-success-focus-color: var($__buds--success-active-color, $buds--success-active-color) !default;
+$buds--button-success-focus-bg: var($__buds--success-active-bg, $buds--success-active-bg) !default;
+$buds--button-success-focus-bg-image: var($__buds--success-active-bg-image, $buds--success-active-bg-image) !default;
+
+$buds--button-success-disabled-border-color: var(
+  $__buds--success-disabled-border-color,
+  $buds--success-disabled-border-color
+) !default;
+$buds--button-success-disabled-color: var($__buds--success-disabled-color, $buds--success-disabled-color) !default;
+$buds--button-success-disabled-bg: var($__buds--success-disabled-bg, $buds--success-disabled-bg) !default;
+$buds--button-success-disabled-bg-image: var($__buds--success-disabled-bg-image, $buds--success-disabled-bg-image) !default;
+$buds--button-success-disabled-opacity: var($__buds--success-disabled-opacity, $buds--success-disabled-opacity) !default;
+
+$buds--button-warning-border-color: var($__buds--warning-border-color, $buds--warning-border-color) !default;
+$buds--button-warning-color: var($__buds--warning-color, $buds--warning-color) !default;
+$buds--button-warning-bg: var($__buds--warning-bg, $buds--warning-bg) !default;
+$buds--button-warning-bg-image: var($__buds--warning-bg-image, $buds--warning-bg-image) !default;
+
+$buds--button-warning-box-shadow: var($__buds--button-box-shadow, $buds--button-box-shadow) !default;
+$buds--button-warning-light: $buds--button-warning-color !default;
+$buds--button-warning-dark: $buds--button-warning-color !default;
+
+$buds--button-warning-hover-border-color: var($__buds--warning-hover-border-color, $buds--warning-hover-border-color) !default;
+$buds--button-warning-hover-color: var($__buds--warning-hover-color, $buds--warning-hover-color) !default;
+$buds--button-warning-hover-bg: var($__buds--warning-hover-bg, $buds--warning-hover-bg) !default;
+$buds--button-warning-hover-bg-image: var($__buds--warning-hover-bg-image, $buds--warning-hover-bg-image) !default;
+
+$buds--button-warning-focus-border-color: var(
+  $__buds--warning-active-border-color,
+  $buds--warning-active-border-color
+) !default;
+$buds--button-warning-focus-color: var($__buds--warning-active-color, $buds--warning-active-color) !default;
+$buds--button-warning-focus-bg: var($__buds--warning-active-bg, $buds--warning-active-bg) !default;
+$buds--button-warning-focus-bg-image: var($__buds--warning-active-bg-image, $buds--warning-active-bg-image) !default;
+
+$buds--button-warning-disabled-border-color: var(
+  $__buds--warning-disabled-border-color,
+  $buds--warning-disabled-border-color
+) !default;
+$buds--button-warning-disabled-color: var($__buds--warning-disabled-color, $buds--warning-disabled-color) !default;
+$buds--button-warning-disabled-bg: var($__buds--warning-disabled-bg, $buds--warning-disabled-bg) !default;
+$buds--button-warning-disabled-bg-image: var($__buds--warning-disabled-bg-image, $buds--warning-disabled-bg-image) !default;
+$buds--button-warning-disabled-opacity: var($__buds--warning-disabled-opacity, $buds--warning-disabled-opacity) !default;
+
+$buds--button-danger-border-color: var($__buds--danger-border-color, $buds--danger-border-color) !default;
+$buds--button-danger-color: var($__buds--danger-color, $buds--danger-color) !default;
+$buds--button-danger-bg: var($__buds--danger-bg, $buds--danger-bg) !default;
+$buds--button-danger-bg-image: var($__buds--danger-bg-image, $buds--danger-bg-image) !default;
+
+$buds--button-danger-box-shadow: var($__buds--button-box-shadow, $buds--button-box-shadow) !default;
+$buds--button-danger-light: #ff4d4f !default;
+$buds--button-danger-dark: #cf1322 !default;
+
+$buds--button-danger-hover-border-color: var($__buds--danger-hover-border-color, $buds--danger-hover-border-color) !default;
+$buds--button-danger-hover-color: var($__buds--danger-hover-color, $buds--danger-hover-color) !default;
+$buds--button-danger-hover-bg: var($__buds--danger-hover-bg, $buds--danger-hover-bg) !default;
+$buds--button-danger-hover-bg-image: var($__buds--danger-hover-bg-image, $buds--danger-hover-bg-image) !default;
+
+$buds--button-danger-focus-border-color: var($__buds--danger-active-border-color, $buds--danger-active-border-color) !default;
+$buds--button-danger-focus-color: var($__buds--danger-active-color, $buds--danger-active-color) !default;
+$buds--button-danger-focus-bg: var($__buds--danger-active-bg, $buds--danger-active-bg) !default;
+$buds--button-danger-focus-bg-image: var($__buds--danger-active-bg-image, $buds--danger-active-bg-image) !default;
+
+$buds--button-danger-disabled-border-color: var(
+  $__buds--danger-disabled-border-color,
+  $buds--danger-disabled-border-color
+) !default;
+$buds--button-danger-disabled-color: var($__buds--danger-disabled-color, $buds--danger-disabled-color) !default;
+$buds--button-danger-disabled-bg: var($__buds--danger-disabled-bg, $buds--danger-disabled-bg) !default;
+$buds--button-danger-disabled-bg-image: var($__buds--danger-disabled-bg-image, $buds--danger-disabled-bg-image) !default;
+$buds--button-danger-disabled-opacity: var($__buds--danger-disabled-opacity, $buds--danger-disabled-opacity) !default;
