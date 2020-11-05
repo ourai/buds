@@ -1,0 +1,7 @@
+@import "../../../helper/style/variables";
+@import "./properties";
+
+$buds--box-shadow: var($__buds--box-shadow, 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04)) !default;
+$buds--box-shadow-sm: var($__buds--box-shadow-sm, 0 0.125rem 0.25rem rgba($__buds--black, 0.075)) !default;
+$buds--box-shadow-lg: var($__buds--box-shadow-lg, 0 1rem 3rem rgba($__buds--black, 0.175)) !default;
+$buds--box-shadow-inset: var($__buds--box-shadow-inset, inset 0 1px 2px rgba($__buds--black, 0.075)) !default;

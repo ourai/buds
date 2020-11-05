@@ -1,0 +1,33 @@
+@import "../../../helper/style/variables";
+@import "../../border/style/variables";
+@import "../../theme/style/variables";
+@import "./properties";
+
+$buds--form-control-height: var($__buds--form-control-height, 36px) !default;
+$buds--form-control-height-lg: var($__buds--form-control-height-lg, 40px) !default;
+$buds--form-control-height-sm: var($__buds--form-control-height-sm, 32px) !default;
+
+$buds--form-control-font-size: var($__buds--form-control-font-size, var($__buds--font-size, $buds--font-size)) !default;
+$buds--form-control-font-size-lg: var($__buds--form-control-font-size-lg, var($__buds--font-size-lg, $buds--font-size-lg)) !default;
+$buds--form-control-font-size-sm: var($__buds--form-control-font-size-sm, var($__buds--font-size-sm, $buds--font-size-sm)) !default;
+
+$buds--form-control-color: var($__buds--text-regular, $buds--text-regular) !default;
+$buds--form-control-bg: $__buds--white !default;
+$buds--form-control-box-shadow: none !default;
+
+$buds--form-control-placeholder-color: var($__buds--text-placeholder, $buds--text-placeholder) !default;
+
+$buds--form-control-border-width: var($__buds--border-width, $buds--border-width) !default;
+$buds--form-control-border-color: var($__buds--border-color, $buds--border-color) !default;
+$buds--form-control-border-radius: var($__buds--border-radius, $buds--border-radius) !default;
+$buds--form-control-border-radius-lg: var($__buds--border-radius-lg, $buds--border-radius-lg) !default;
+$buds--form-control-border-radius-sm: var($__buds--border-radius-sm, $buds--border-radius-sm) !default;
+
+$buds--form-control-disabled-border-color: var($__buds--disabled-border-color, $buds--disabled-border-color) !default;
+$buds--form-control-disabled-bg: var($__buds--disabled-bg, $buds--disabled-bg) !default;
+
+$buds--form-control-hover-border-color: var($__buds--primary-hover, $buds--primary-hover) !default;
+
+$buds--form-control-focus-border-color: var($__buds--primary, $buds--primary) !default;
+$buds--form-control-focus-bg: var($__buds--form-control-bg, $buds--form-control-bg) !default;
+$buds--form-control-focus-box-shadow: none !default;

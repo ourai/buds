@@ -1,0 +1,10 @@
+@import "./properties";
+
+$buds--border-width: var($__buds--border-width, 1px) !default;
+$buds--border-color: var($__buds--border-color, #dcdfe6) !default;
+
+$buds--border-radius: var($__buds--border-radius, 4px) !default;
+$buds--border-radius-lg: var($__buds--border-radius-lg, 0.3rem) !default;
+$buds--border-radius-sm: var($__buds--border-radius-sm, 2px) !default;
+
+$buds--rounded-pill: 50rem !default;

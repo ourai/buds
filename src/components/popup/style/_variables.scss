@@ -1,0 +1,24 @@
+@import "../../../helper/style/variables";
+@import "../../border/style/variables";
+@import "../../box-shadow/style/variables";
+@import "../../state/style/variables";
+@import "./properties";
+
+$buds--popup-font-size: var($__buds--font-size, $buds--font-size) !default;
+$buds--popup-color: var($__buds--text-regular, $buds--text-regular) !default;
+$buds--popup-border-width: var($__buds--border-width, $buds--border-width) !default;
+$buds--popup-border-color: var($__buds--border-color, $buds--border-color) !default;
+$buds--popup-border-radius: var($__buds--border-radius, $buds--border-radius) !default;
+$buds--popup-box-shadow: var($__buds--box-shadow, $buds--box-shadow) !default;
+$buds--popup-padding-y: 10px !default;
+
+$buds--popup-item-height: 30px !default;
+$buds--popup-item-padding-y: 0 !default;
+$buds--popup-item-padding-x: 12px !default;
+$buds--popup-item-color: var($__buds--popup-color, $buds--popup-color) !default;
+$buds--popup-item-bg: transparent !default;
+$buds--popup-item-hover-color: var($__buds--popup-item-color, $buds--popup-item-color) !default;
+$buds--popup-item-hover-bg: var($__buds--hover-bg, $buds--hover-bg) !default;
+
+$buds--popup-backdrop-bg: $__buds--black !default;
+$buds--popup-backdrop-opacity: 0.5 !default;

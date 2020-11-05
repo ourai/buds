@@ -1,0 +1,14 @@
+@import "../../../helper/style/variables";
+@import "../../border/style/variables";
+@import "./properties";
+
+$buds--hover-bg: $__buds--white !default;
+
+$buds--active-border-color: var($__buds--primary-active, $buds--primary-active) !default;
+$buds--active-color: var($__buds--primary-active, $buds--primary-active) !default;
+$buds--active-bg: var($__buds--primary-active, $buds--primary-active) !default;
+
+$buds--disabled-border-color: var($__buds--border-color, $buds--border-color) !default;
+$buds--disabled-color: var($__buds--text-placeholder, $buds--text-placeholder) !default;
+$buds--disabled-bg: #edf2fc !default;
+$buds--disabled-opacity: 1 !default;
