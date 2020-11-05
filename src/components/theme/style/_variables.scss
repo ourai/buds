@@ -5,7 +5,7 @@
 
 $buds--default-border-color: var($__buds--border-color, $buds--border-color) !default;
 $buds--default-color: var($__buds--text-regular, $buds--text-regular) !default;
-$buds--default-bg: $buds--white !default;
+$buds--default-bg: $__buds--white !default;
 $buds--default-bg-image: none !default;
 
 $buds--default-hover-border-color: var($__buds--primary-hover, $buds--primary-hover) !default;
@@ -25,17 +25,17 @@ $buds--default-disabled-bg-image: var($__buds--default-bg-image, $buds--default-
 $buds--default-disabled-opacity: var($__buds--disabled-opacity, $buds--disabled-opacity) !default;
 
 $buds--primary-border-color: var($__buds--primary, $buds--primary) !default;
-$buds--primary-color: $buds--white !default;
+$buds--primary-color: $__buds--white !default;
 $buds--primary-bg: var($__buds--primary, $buds--primary) !default;
 $buds--primary-bg-image: none !default;
 
 $buds--primary-hover-border-color: var($__buds--primary-hover, $buds--primary-hover) !default;
-$buds--primary-hover-color: $buds--white !default;
+$buds--primary-hover-color: $__buds--white !default;
 $buds--primary-hover-bg: var($__buds--primary-hover, $buds--primary-hover) !default;
 $buds--primary-hover-bg-image: var($__buds--primary-bg-image, $buds--primary-bg-image) !default;
 
 $buds--primary-active-border-color: var($__buds--primary-active, $buds--primary-active) !default;
-$buds--primary-active-color: $buds--white !default;
+$buds--primary-active-color: $__buds--white !default;
 $buds--primary-active-bg: var($__buds--primary-active, $buds--primary-active) !default;
 $buds--primary-active-bg-image: var($__buds--primary-bg-image, $buds--primary-bg-image) !default;
 
@@ -46,17 +46,17 @@ $buds--primary-disabled-bg-image: var($__buds--primary-bg-image, $buds--primary-
 $buds--primary-disabled-opacity: var($__buds--disabled-opacity, $buds--disabled-opacity) !default;
 
 $buds--info-border-color: var($__buds--info, $buds--info) !default;
-$buds--info-color: $buds--white !default;
+$buds--info-color: $__buds--white !default;
 $buds--info-bg: var($__buds--info, $buds--info) !default;
 $buds--info-bg-image: none !default;
 
 $buds--info-hover-border-color: var($__buds--info-hover, $buds--info-hover) !default;
-$buds--info-hover-color: $buds--white !default;
+$buds--info-hover-color: $__buds--white !default;
 $buds--info-hover-bg: var($__buds--info-hover, $buds--info-hover) !default;
 $buds--info-hover-bg-image: var($__buds--info-bg-image, $buds--info-bg-image) !default;
 
 $buds--info-active-border-color: var($__buds--info-active, $buds--info-active) !default;
-$buds--info-active-color: $buds--white !default;
+$buds--info-active-color: $__buds--white !default;
 $buds--info-active-bg: var($__buds--info-active, $buds--info-active) !default;
 $buds--info-active-bg-image: var($__buds--info-bg-image, $buds--info-bg-image) !default;
 
@@ -67,17 +67,17 @@ $buds--info-disabled-bg-image: var($__buds--info-bg-image, $buds--info-bg-image)
 $buds--info-disabled-opacity: var($__buds--disabled-opacity, $buds--disabled-opacity) !default;
 
 $buds--success-border-color: var($__buds--success, $buds--success) !default;
-$buds--success-color: $buds--white !default;
+$buds--success-color: $__buds--white !default;
 $buds--success-bg: var($__buds--success, $buds--success) !default;
 $buds--success-bg-image: none !default;
 
 $buds--success-hover-border-color: var($__buds--success-hover, $buds--success-hover) !default;
-$buds--success-hover-color: $buds--white !default;
+$buds--success-hover-color: $__buds--white !default;
 $buds--success-hover-bg: var($__buds--success-hover, $buds--success-hover) !default;
 $buds--success-hover-bg-image: var($__buds--success-bg-image, $buds--success-bg-image) !default;
 
 $buds--success-active-border-color: var($__buds--success-active, $buds--success-active) !default;
-$buds--success-active-color: $buds--white !default;
+$buds--success-active-color: $__buds--white !default;
 $buds--success-active-bg: var($__buds--success-active, $buds--success-active) !default;
 $buds--success-active-bg-image: var($__buds--success-bg-image, $buds--success-bg-image) !default;
 
@@ -88,17 +88,17 @@ $buds--success-disabled-bg-image: var($__buds--success-bg-image, $buds--success-
 $buds--success-disabled-opacity: var($__buds--disabled-opacity, $buds--disabled-opacity) !default;
 
 $buds--warning-border-color: var($__buds--warning, $buds--warning) !default;
-$buds--warning-color: $buds--white !default;
+$buds--warning-color: $__buds--white !default;
 $buds--warning-bg: var($__buds--warning, $buds--warning) !default;
 $buds--warning-bg-image: none !default;
 
 $buds--warning-hover-border-color: var($__buds--warning-hover, $buds--warning-hover) !default;
-$buds--warning-hover-color: $buds--white !default;
+$buds--warning-hover-color: $__buds--white !default;
 $buds--warning-hover-bg: var($__buds--warning-hover, $buds--warning-hover) !default;
 $buds--warning-hover-bg-image: var($__buds--warning-bg-image, $buds--warning-bg-image) !default;
 
 $buds--warning-active-border-color: var($__buds--warning-active, $buds--warning-active) !default;
-$buds--warning-active-color: $buds--white !default;
+$buds--warning-active-color: $__buds--white !default;
 $buds--warning-active-bg: var($__buds--warning-active, $buds--warning-active) !default;
 $buds--warning-active-bg-image: var($__buds--warning-bg-image, $buds--warning-bg-image) !default;
 
@@ -109,17 +109,17 @@ $buds--warning-disabled-bg-image: var($__buds--warning-bg-image, $buds--warning-
 $buds--warning-disabled-opacity: var($__buds--disabled-opacity, $buds--disabled-opacity) !default;
 
 $buds--danger-border-color: var($__buds--danger, $buds--danger) !default;
-$buds--danger-color: $buds--white !default;
+$buds--danger-color: $__buds--white !default;
 $buds--danger-bg: var($__buds--danger, $buds--danger) !default;
 $buds--danger-bg-image: none !default;
 
 $buds--danger-hover-border-color: var($__buds--danger-hover, $buds--danger-hover) !default;
-$buds--danger-hover-color: $buds--white !default;
+$buds--danger-hover-color: $__buds--white !default;
 $buds--danger-hover-bg: var($__buds--danger-hover, $buds--danger-hover) !default;
 $buds--danger-hover-bg-image: var($__buds--danger-bg-image, $buds--danger-bg-image) !default;
 
 $buds--danger-active-border-color: var($__buds--danger-active, $buds--danger-active) !default;
-$buds--danger-active-color: $buds--white !default;
+$buds--danger-active-color: $__buds--white !default;
 $buds--danger-active-bg: var($__buds--danger-active, $buds--danger-active) !default;
 $buds--danger-active-bg-image: var($__buds--danger-bg-image, $buds--danger-bg-image) !default;
 
