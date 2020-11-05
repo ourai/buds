@@ -1,6 +1,6 @@
-@import "./vendors/trick/core";
-@import "./vendors/trick/layout";
-@import "./vendors/trick/vendors/compass/animation/core";
+@import "../../vendors/trick/core";
+@import "../../vendors/trick/layout";
+@import "../../vendors/trick/vendors/compass/animation/core";
 
 @mixin component-rules($component-name, $tag-name: '') {
   @if $tag-name == '' {
