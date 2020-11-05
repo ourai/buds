@@ -1,64 +1,64 @@
 .Button {
-  padding: var($__buds--button-padding-y, $ss--button-padding-y) var($__buds--button-padding-x, $ss--button-padding-x);
-  font-size: var($__buds--button-font-size, $ss--button-font-size);
-  border-radius: var($__buds--button-border-radius, $ss--button-border-radius);
+  padding: var($__buds--button-padding-y, $buds--button-padding-y) var($__buds--button-padding-x, $buds--button-padding-x);
+  font-size: var($__buds--button-font-size, $buds--button-font-size);
+  border-radius: var($__buds--button-border-radius, $buds--button-border-radius);
 
   &:hover {
     cursor: pointer;
   }
 
   &--large {
-    padding: var($__buds--button-padding-y-lg, $ss--button-padding-y-lg)
-      var($__buds--button-padding-x-lg, $ss--button-padding-x-lg);
-    font-size: var($__buds--button-font-size-lg, $ss--button-font-size-lg);
-    border-radius: var($__buds--button-border-radius-lg, $ss--button-border-radius-lg);
+    padding: var($__buds--button-padding-y-lg, $buds--button-padding-y-lg)
+      var($__buds--button-padding-x-lg, $buds--button-padding-x-lg);
+    font-size: var($__buds--button-font-size-lg, $buds--button-font-size-lg);
+    border-radius: var($__buds--button-border-radius-lg, $buds--button-border-radius-lg);
   }
 
   &--small {
-    padding: var($__buds--button-padding-y-sm, $ss--button-padding-y-sm)
-      var($__buds--button-padding-x-sm, $ss--button-padding-x-sm);
-    font-size: var($__buds--button-font-size-sm, $ss--button-font-size-sm);
-    border-radius: var($__buds--button-border-radius-sm, $ss--button-border-radius-sm);
+    padding: var($__buds--button-padding-y-sm, $buds--button-padding-y-sm)
+      var($__buds--button-padding-x-sm, $buds--button-padding-x-sm);
+    font-size: var($__buds--button-font-size-sm, $buds--button-font-size-sm);
+    border-radius: var($__buds--button-border-radius-sm, $buds--button-border-radius-sm);
   }
 
   &--link {
-    color: var($__buds--primary, $ss--primary);
+    color: var($__buds--primary, $buds--primary);
 
     &:hover {
-      color: var($__buds--primary-hover, $ss--primary-hover);
+      color: var($__buds--primary-hover, $buds--primary-hover);
     }
 
     &:focus,
     &:active,
     &.is-active {
-      color: var($__buds--primary-active, $ss--primary-active);
+      color: var($__buds--primary-active, $buds--primary-active);
     }
   }
 
   &:not(&--link) {
-    min-width: var($__buds--button-min-width, $ss--button-min-width);
-    max-width: var($__buds--button-max-width, $ss--button-max-width);
-    color: var($__buds--button-color, $ss--button-color);
-    border-color: var($__buds--button-border-color, $ss--button-border-color);
+    min-width: var($__buds--button-min-width, $buds--button-min-width);
+    max-width: var($__buds--button-max-width, $buds--button-max-width);
+    color: var($__buds--button-color, $buds--button-color);
+    border-color: var($__buds--button-border-color, $buds--button-border-color);
     background: {
-      color: var($__buds--button-bg, $ss--button-bg);
-      image: var($__buds--button-bg-image, $ss--button-bg-image);
+      color: var($__buds--button-bg, $buds--button-bg);
+      image: var($__buds--button-bg-image, $buds--button-bg-image);
     }
     @include ellipsis(true);
 
     &:hover {
-      color: var($__buds--button-hover-color, $ss--button-hover-color);
-      border-color: var($__buds--button-hover-border-color, $ss--button-hover-border-color);
-      background-color: var($__buds--button-hover-bg, $ss--button-hover-bg);
+      color: var($__buds--button-hover-color, $buds--button-hover-color);
+      border-color: var($__buds--button-hover-border-color, $buds--button-hover-border-color);
+      background-color: var($__buds--button-hover-bg, $buds--button-hover-bg);
     }
 
     &:focus,
     &:active {
-      color: var($__buds--button-focus-color, $ss--button-focus-color);
-      border-color: var($__buds--button-focus-border-color, $ss--button-focus-border-color);
+      color: var($__buds--button-focus-color, $buds--button-focus-color);
+      border-color: var($__buds--button-focus-border-color, $buds--button-focus-border-color);
       background: {
-        color: var($__buds--button-focus-bg, $ss--button-focus-bg);
-        image: var($__buds--button-focus-bg-image, $ss--button-focus-bg-image);
+        color: var($__buds--button-focus-bg, $buds--button-focus-bg);
+        image: var($__buds--button-focus-bg-image, $buds--button-focus-bg-image);
       }
     }
 
@@ -67,43 +67,43 @@
       &:hover,
       &:focus,
       &:active {
-        color: var($__buds--button-disabled-color, $ss--button-disabled-color);
-        border-color: var($__buds--button-disabled-border-color, $ss--button-disabled-border-color);
+        color: var($__buds--button-disabled-color, $buds--button-disabled-color);
+        border-color: var($__buds--button-disabled-border-color, $buds--button-disabled-border-color);
         background: {
-          color: var($__buds--button-disabled-bg, $ss--button-disabled-bg);
-          image: var($__buds--button-disabled-bg-image, $ss--button-disabled-bg-image);
+          color: var($__buds--button-disabled-bg, $buds--button-disabled-bg);
+          image: var($__buds--button-disabled-bg-image, $buds--button-disabled-bg-image);
         }
-        opacity: var($__buds--button-disabled-opacity, $ss--button-disabled-opacity);
+        opacity: var($__buds--button-disabled-opacity, $buds--button-disabled-opacity);
       }
     }
   }
 
   &.is-primary:not(&--link) {
-    color: var($__buds--button-primary-color, $ss--button-primary-color);
-    border-color: var($__buds--button-primary-border-color, $ss--button-primary-border-color);
+    color: var($__buds--button-primary-color, $buds--button-primary-color);
+    border-color: var($__buds--button-primary-border-color, $buds--button-primary-border-color);
     background: {
-      color: var($__buds--button-primary-bg, $ss--button-primary-bg);
-      image: var($__buds--button-primary-bg-image, $ss--button-primary-bg-image);
+      color: var($__buds--button-primary-bg, $buds--button-primary-bg);
+      image: var($__buds--button-primary-bg-image, $buds--button-primary-bg-image);
     }
-    box-shadow: var($__buds--button-primary-box-shadow, $ss--button-primary-box-shadow);
+    box-shadow: var($__buds--button-primary-box-shadow, $buds--button-primary-box-shadow);
 
     &:hover {
-      color: var($__buds--button-primary-hover-color, $ss--button-primary-hover-color);
-      border-color: var($__buds--button-primary-hover-border-color, $ss--button-primary-hover-border-color);
+      color: var($__buds--button-primary-hover-color, $buds--button-primary-hover-color);
+      border-color: var($__buds--button-primary-hover-border-color, $buds--button-primary-hover-border-color);
       background: {
-        color: var($__buds--button-primary-hover-bg, $ss--button-primary-hover-bg);
-        image: var($__buds--button-primary-hover-bg-image, $ss--button-primary-hover-bg-image);
+        color: var($__buds--button-primary-hover-bg, $buds--button-primary-hover-bg);
+        image: var($__buds--button-primary-hover-bg-image, $buds--button-primary-hover-bg-image);
       }
     }
 
     &:focus,
     &:active,
     &.is-active {
-      color: var($__buds--button-primary-focus-color, $ss--button-primary-focus-color);
-      border-color: var($__buds--button-primary-focus-border-color, $ss--button-primary-focus-border-color);
+      color: var($__buds--button-primary-focus-color, $buds--button-primary-focus-color);
+      border-color: var($__buds--button-primary-focus-border-color, $buds--button-primary-focus-border-color);
       background: {
-        color: var($__buds--button-primary-focus-bg, $ss--button-primary-focus-bg);
-        image: var($__buds--button-primary-focus-bg-image, $ss--button-primary-focus-bg-image);
+        color: var($__buds--button-primary-focus-bg, $buds--button-primary-focus-bg);
+        image: var($__buds--button-primary-focus-bg-image, $buds--button-primary-focus-bg-image);
       }
     }
 
@@ -112,42 +112,42 @@
       &:hover,
       &:focus,
       &:active {
-        color: var($__buds--button-primary-disabled-color, $ss--button-primary-disabled-color);
-        border-color: var($__buds--button-primary-disabled-border-color, $ss--button-primary-disabled-border-color);
+        color: var($__buds--button-primary-disabled-color, $buds--button-primary-disabled-color);
+        border-color: var($__buds--button-primary-disabled-border-color, $buds--button-primary-disabled-border-color);
         background: {
-          color: var($__buds--button-primary-disabled-bg, $ss--button-primary-disabled-bg);
-          image: var($__buds--button-primary-disabled-bg-image, $ss--button-primary-disabled-bg-image);
+          color: var($__buds--button-primary-disabled-bg, $buds--button-primary-disabled-bg);
+          image: var($__buds--button-primary-disabled-bg-image, $buds--button-primary-disabled-bg-image);
         }
-        opacity: var($__buds--button-primary-disabled-opacity, $ss--button-primary-disabled-opacity);
+        opacity: var($__buds--button-primary-disabled-opacity, $buds--button-primary-disabled-opacity);
       }
     }
   }
 
   &.is-danger:not(&--link) {
-    color: var($__buds--button-danger-color, $ss--button-danger-color);
-    border-color: var($__buds--button-danger-border-color, $ss--button-danger-border-color);
+    color: var($__buds--button-danger-color, $buds--button-danger-color);
+    border-color: var($__buds--button-danger-border-color, $buds--button-danger-border-color);
     background: {
-      color: var($__buds--button-danger-bg, $ss--button-danger-bg);
-      image: var($__buds--button-danger-bg-image, $ss--button-danger-bg-image);
+      color: var($__buds--button-danger-bg, $buds--button-danger-bg);
+      image: var($__buds--button-danger-bg-image, $buds--button-danger-bg-image);
     }
 
     &:hover {
-      color: var($__buds--button-danger-hover-color, $ss--button-danger-hover-color);
-      border-color: var($__buds--button-danger-hover-border-color, $ss--button-danger-hover-border-color);
+      color: var($__buds--button-danger-hover-color, $buds--button-danger-hover-color);
+      border-color: var($__buds--button-danger-hover-border-color, $buds--button-danger-hover-border-color);
       background: {
-        color: var($__buds--button-danger-hover-bg, $ss--button-danger-hover-bg);
-        image: var($__buds--button-danger-hover-bg-image, $ss--button-danger-hover-bg-image);
+        color: var($__buds--button-danger-hover-bg, $buds--button-danger-hover-bg);
+        image: var($__buds--button-danger-hover-bg-image, $buds--button-danger-hover-bg-image);
       }
     }
 
     &:focus,
     &:active,
     &.is-active {
-      color: var($__buds--button-danger-focus-color, $ss--button-danger-focus-color);
-      border-color: var($__buds--button-danger-focus-border-color, $ss--button-danger-focus-border-color);
+      color: var($__buds--button-danger-focus-color, $buds--button-danger-focus-color);
+      border-color: var($__buds--button-danger-focus-border-color, $buds--button-danger-focus-border-color);
       background: {
-        color: var($__buds--button-danger-focus-bg, $ss--button-danger-focus-bg);
-        image: var($__buds--button-danger-focus-bg-image, $ss--button-danger-focus-bg-image);
+        color: var($__buds--button-danger-focus-bg, $buds--button-danger-focus-bg);
+        image: var($__buds--button-danger-focus-bg-image, $buds--button-danger-focus-bg-image);
       }
     }
 
@@ -156,13 +156,13 @@
       &:hover,
       &:focus,
       &:active {
-        color: var($__buds--button-danger-disabled-color, $ss--button-danger-disabled-color);
-        border-color: var($__buds--button-danger-disabled-border-color, $ss--button-danger-disabled-border-color);
+        color: var($__buds--button-danger-disabled-color, $buds--button-danger-disabled-color);
+        border-color: var($__buds--button-danger-disabled-border-color, $buds--button-danger-disabled-border-color);
         background: {
-          color: var($__buds--button-danger-disabled-bg, $ss--button-danger-disabled-bg);
-          image: var($__buds--button-danger-disabled-bg-image, $ss--button-danger-disabled-bg-image);
+          color: var($__buds--button-danger-disabled-bg, $buds--button-danger-disabled-bg);
+          image: var($__buds--button-danger-disabled-bg-image, $buds--button-danger-disabled-bg-image);
         }
-        opacity: var($__buds--button-danger-disabled-opacity, $ss--button-danger-disabled-opacity);
+        opacity: var($__buds--button-danger-disabled-opacity, $buds--button-danger-disabled-opacity);
       }
     }
   }

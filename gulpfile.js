@@ -1,5 +1,6 @@
 const gulp = require("gulp");
 const concat = require("gulp-concat");
+const aliases = require('gulp-style-aliases');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const cssmin = require("gulp-cssmin");
@@ -20,6 +21,7 @@ const tasks = [];
     return gulp
       .src(`src/_${name}.scss`)
       .pipe(concat(`${name}.scss`))
+      .pipe(aliases({'~@petals': './node_modules/@petals'}))
       .pipe(sass({outputStyle: "expanded", noLineComments: true, keepSpecialComments: 0}).on("error", sass.logError))
       .pipe(stripCssComments({preserve: false}))
       .pipe(gulp.dest(CSS_DIST));
