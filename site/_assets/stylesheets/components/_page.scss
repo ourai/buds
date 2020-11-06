@@ -21,8 +21,37 @@ body {
       family: Georgia;
       weight: bold;
     }
-    color: inherit;
     text-shadow: 1px 1px #fff;
+
+    &,
+    a {
+      color: inherit;
+    }
+
+    a {
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      + a {
+        position: relative;
+        margin-left: 1em;
+        font: {
+          family: Sans-serif;
+          weight: normal;
+        }
+
+        &:before {
+          content: $UN-space;
+          position: absolute;
+          top: 7px;
+          bottom: 7px;
+          left: -.5em;
+          border-left: 1px solid currentColor;
+        }
+      }
+    }
   }
 
   .navbar-toggle {

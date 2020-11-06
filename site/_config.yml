@@ -43,6 +43,9 @@ gems:
 markdown: kramdown
 highlighter: pygments
 
+# Serving
+baseurl: /buds
+
 # Outputting
 permalink: /posts/:title/
 timezone: Asia/Shanghai
